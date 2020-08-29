@@ -1,7 +1,6 @@
 ---
-title: "ECO 280 Syllabus"
-date: 2020-08-29T16:12:25-04:00
-draft: true
+title: 'ECO 280 Syllabus'
+date: ''
 ---
 Susan Sayre | Smith College | Fall 2020
 
