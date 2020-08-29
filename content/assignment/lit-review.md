@@ -2,11 +2,6 @@
 title: "Literature Review"
 date: '2020-08-29T15:06:54-04:00'
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 # Submission details
 
 You will submit this assignment by pushing a PDF of your literature review to your lit-review-gitusername repo by 10:30am EST on Wed Oct 7. Although not strictly required, it is highly recommended that you also push the sourcefile (e.g. a .docx or .Rmd file) unless you wrote your lit review in Google Docs.
