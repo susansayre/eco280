@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://eco280smith.netlify.app/"
 languageCode = "en-us"
 title = "ECO 280"
 theme = "hugo-lithium"
