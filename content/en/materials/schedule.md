@@ -27,7 +27,7 @@ Searching the literature/Git
 
 #### Wed 9/9
 
-**Read** Almond, D., Currie, J., & Duque, V. (2018). Childhood circumstances and adult outcomes: Act II. *Journal of Economic Literature*, 56(4), 1360-1446.
+**Read** [Almond, D. (2018). Childhood circumstances and adult outcomes: Act II. *Journal of Economic Literature*, 56(4), 1360.](http://sfxhosted.exlibrisgroup.com/smith?sid=google&auinit=D&aulast=Almond&atitle=Childhood%20circumstances%20and%20adult%20outcomes%3A%20Act%20II&title=Journal%20of%20Economic%20Literature&volume=56&issue=4&date=2018&spage=1360&issn=0022-0515)
 
 **Discussion**  Paper structure, how the authors engage with other economimc literature. Pay close attention to how they organized the papers, what they tell us about each paper, and the language they use in discussing the papers.
 
