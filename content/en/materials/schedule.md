@@ -6,6 +6,8 @@ title: Schedule
 weight: 2
 ---
 
+## Section 1:
+
 he paper appears. You do *not* need to summarize the papers themselves but should bring a copy of the one you are most interested in to class.
         - Reading skills: abstract, introduction, and conclusion; focused reading of data and methods
         - Construct a summary of one of your articles (due before class next Wednesday)
