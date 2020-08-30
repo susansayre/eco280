@@ -10,15 +10,17 @@ weight: 2
 
 In the first part of the course, we will spend our Monday class sessions learning/reviewing the three software tools we will use in this class: R, Stata, and Git and our Wednesday class sessions focused on searching, reading, and writing about the economic literature. Weekly computer homework exercises will be handed out each Monday and will be due the following Monday. During this phase of the course, each student will write a synthetic review of the economic literature on a topic of your choosing.
 
-### Week 1 (8/31 - 9/4): Course Intro and Software Setup
+### Week 1 (8/31 - 9/4)
+Course Intro and Software Setup
 
-#### Wed 9/2 Class Intro
+#### Wed 9/2
+Introduction to class
 
 ### Week 2 (9/7 - 9/11): Searching the literature/Git
 
 #### Mon 9/7 
 
-**Read** Bryan, J. (2018). Excuse me, do you have a moment to talk about version control?. *The American Statistician*, 72(1), 20-27.
+**Read** [Bryan, J. (2018). Excuse me, do you have a moment to talk about version control?. The American Statistician, 72(1), 20.](http://sfxhosted.exlibrisgroup.com/smith?sid=google&auinit=J&aulast=Bryan&atitle=Excuse%20me%2C%20do%20you%20have%20a%20moment%20to%20talk%20about%20version%20control%3F&title=The%20American%20Statistician&volume=72&issue=1&date=2018&spage=20&issn=0003-1305)
 **Prepare** by starting [HW 1](homework/hw1-git-basics). You do **not** need to finish the homework and class will be used for troubleshooting and other questions.
 
 #### Wed 9/9
