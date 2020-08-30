@@ -70,3 +70,29 @@ This assignment is designed to help you develop the following skills:
 - **B/B-**: Papers in this category may have individual strong features but lack a clear argument. The paper may read like an annotated bibliography, reporting on the conclusions of a series of papers without making adequate connections between the papers or offering analysis of the state of the literature. The paper may miss important parts of the literature or mischaracterize some of the findings. Language may be more conversational than academic.
 
 - **C+ or below**: Papers in this category have significant weaknesses as an academic literature review. They may engage only a small number of papers or make an argument about the literature that is unsupported by the evidence. Alternatively, they may fail to include any synthesis across topics.
+
+## Intermediate Products
+
+As noted above, there are several intermediate deadlines associated with this project to help keep you on track.
+
+### Literature search
+
+**Submit** to your GitHub repo by Wed 9/16
+
+Using a mix of Google Scholar and EconLit, search the economic literature on a topic of your choosing. Write a brief summary of your literature search in an RMarkdown document and push it to your GitHub lit-review repo (as described in [HW 1](https://eco280smith.netlify.app/materials/homework/hw1-git-basics/#initialize-your-lit-review-repo)). You should describe the search terms you used, how you traced papers, etc and provide bibliographic information for the  papers that seemed interesting. 
+
+When searching the literature, you should start with a couple keywords you think are interesting and then adapt based on what you find. It often takes a little while to narrow in on the jargon and phrases economists use for particular topics and to adapt your topic enough to find something that economists have written about enough. Once you have a couple papers that sound interesting, try **tracing backwards** (e.g. looking at their literature reviews and reference sections to see who they cited). Then try **tracing forwards**. [Google Scholar](http://scholar.google.com) is great for this because it is easy to see who has cited a paper. Papers with more citations are more influential, although the publication date of the paper is important here.
+
+While you should include mostly published, peer-reviewed journal article, economics is somewhat unusual as a discipline in that working papers are often cited as well.
+
+### Article summary
+
+**Submit** to your GitHub repo by Wed 9/23
+
+Add description once complete
+
+### Article classification/presentation
+
+Live in class on 9/28 or 9/30 **or** recorded and shared with the class before class on 9/30
+
+You will make a brief presentation either live in class or recorded asynchronously and shared with class. In this video, you will use a couple slides to describe what you've discovered about the economic literature on your topic. Presentations/videos should be 3-5 minutes long.

@@ -6,7 +6,7 @@ title: Schedule
 weight: 2
 ---
 
-## Section 1:
+## Section 1: Economic Literature
 
 In the first part of the course, we will spend our Monday class sessions learning/reviewing the three software tools we will use in this class: R, Stata, and Git and our Wednesday class sessions focused on searching, reading, and writing about the economic literature. Weekly computer homework exercises will be handed out each Monday and will be due the following Monday. During this phase of the course, each student will write a synthetic review of the economic literature on a topic of your choosing.
 
