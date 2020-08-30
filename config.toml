@@ -1,4 +1,4 @@
-baseURL = "http://example.org"
+baseURL = "https://eco280smith.netlify.app/"
 title = "ECO 280"
 theme = "hugo-theme-zdoc"
 
