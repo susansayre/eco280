@@ -31,7 +31,7 @@ We will follow these basic steps in both R and Stata, but doing so will look dif
 
 Use this link to accept the assignment on GitHub. This will create your personal repository, which you will then clone to your computer. I recommend doing this in RStudio following the steps [here](add link when ready). Once you've completed this step, you will have a folder on your computer called hw2-gitusername. Within this folder, you will have (*check files and list when ready*).
 
-Using either RStudio or your regular file browser, create a subfolder called `data`. Download the `metabolic.csv` file from [this Slack link](https://eco280smith.netlify.app/materials/homework/metabolic.csv) and save it in your data folder.
+Using either RStudio or your regular file browser, create a subfolder called `data`. Download the [hw2-metabolic.csv file](https://eco280smith.netlify.app/materials/homework/hw2-metabolic.csv) and save it in your data folder.
 
 Decide whether you want to start with R or Stata and navigate to the appropriate section of the directions.
 
