@@ -29,7 +29,7 @@ We will follow these basic steps in both R and Stata, but doing so will look dif
 
 ## Initial setup
 
-Use this link to accept the assignment on GitHub. This will create your personal repository, which you will then clone to your computer. I recommend doing this in RStudio following the steps [here](add link when ready). Once you've completed this step, you will have a folder on your computer called hw2-gitusername. Within this folder, you will have (*check files and list when ready*).
+Use this link to accept the assignment on GitHub. This will create your personal repository, which you will then clone to your computer. I recommend doing this in RStudio [following these steps](https://eco280smith.netlify.app/materials/faq/#how-do-i-create-an-r-project-from-a-github-repo). Once you've completed this step, you will have a folder on your computer called hw2-gitusername.
 
 Using either RStudio or your regular file browser, create a subfolder called `data`. Download the [hw2-metabolic.csv file](https://eco280smith.netlify.app/materials/homework/hw2-metabolic.csv) and save it in your data folder.
 
@@ -41,7 +41,7 @@ This section illustrates how to follow the basic steps above in Stata.
 
 ### Step 1
 
-Open your copy of Stata. Within Stata use either the command `cd path/to/your/local/hw2-gitusername` or the menu option to change your working directory to the `hw2-gitusername` folder you created above. **Do not** include the cd command in your final do file. Your path is unique to your computer and will not work on other computers.
+Open your copy of Stata. Within Stata use either the command `cd path/to/your/local/eco280/folder/hw2-gitusername` or the menu option to change your working directory to the `hw2-gitusername` folder you created above. **Do not** include the `cd` command in your final do file. Your path is unique to your computer and will not work on other computers.
 
 *Note:* If you are using Splashtop, you should make a folder on the local machine called `hw2-gitusername` and proceed as if this directory was on your computer as you follow the rest of these directions. Make sure you create a `data` subfolder and put the `metabolic.csv` file in it so that Stata can find the data. When you are done, you will need to copy your code and output files back to your own computer so that you can commit them to git.
 
@@ -58,7 +58,7 @@ Create a new do file and save it as `regression-code.do` in your `hw2-gitusernam
 Enter a comment in your do file identifying your section as `import data` and then enter the code to import the .csv file: 
 
 ```
-insheet using data/metabolic.csv
+insheet using data/hw2-metabolic.csv
 ```
 
 *Note:* Make sure you use a forward slash not a backslash so your code will run on different platforms. Also note that you are using a *relative* path to you file. If you run this code with your working directory set to anything other than your `hw2-gitusername` folder it won't work. We could replace this with an *absolute* path that would work regardless of your working directory but **only on your computer** and only if you never move or rename your analysis folder. 
@@ -146,7 +146,7 @@ Since it is common across both programs, we did step 2 (saving your data) in the
 
 ### Step 3
 
-Choose File -> New file -> RMarkdown and set the title to `Regressions in R (HW 2)`. Make sure you are listed as the author and select HTML output. Save the resulting file as `regression.Rmd`. In the r setup chunk, add add lines loading the two packages we're going to use for this lab: `library(tidyverse)` and `library(broom)`.
+Choose File -> New file -> RMarkdown and set the title to `Regressions in R (HW 2)`. Make sure you are listed as the author and select HTML output. Save the resulting file as `regression.Rmd`. In the r setup chunk, add add lines loading the package we're going to use for this lab: `library(tidyverse)`.
 
 ### Step 4
 
@@ -157,7 +157,7 @@ In R, both the code and the output will be part of the same file. We will work t
 Insert a code chunk and call it `import data`. (*Sidenote:* I recommend naming all code chunks -- as well as comment identified sections in Stata -- with __verbs__ that describe what the sections do.) Within the chunk, using the read_csv function to import the data and store it as an object in R:  Click the green triangle on the chunk to run the code. It should run your setup block and then import the data. If you click on the Environment tab in the upper right in RStudio, you'll see the metabolic object listed. You can click it on it to see the data.
 
 ```
-metabolic <- read_csv("data/metabolic.csv")
+metabolic <- read_csv("data/hw2-metabolic.csv")
 ```
     
 ### Step 4b
