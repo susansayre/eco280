@@ -12,32 +12,44 @@ In the first part of the course, we will spend our Monday class sessions learnin
 
 ### Week 1 (8/31 - 9/4): Course Intro and Software Setup
 
-- Monday: no class
-    
-- Wednesday: Software set-up session
+#### Wed 9/2 Class Intro
 
 ### Week 2 (9/7 - 9/11): Searching the literature/Git
 
-    + Monday: Understanding Git and RMarkdown
-    
-        - Read: Bryan, J. (2018). Excuse me, do you have a moment to talk about version control?. *The American Statistician*, 72(1), 20-27.
-        - Get your computer set up to use Git, GitHub, R, and RStudio by following the steps in Bryan, J. (2018). [Happy Git and GitHub for the useR.](https://happygitwithr.com/)
-        
-    + Wednesday: What is a literature review? How do we search the literature?
-        - Read: Almond, D., Currie, J., & Duque, V. (2018). Childhood circumstances and adult outcomes: Act II. *Journal of Economic Literature*, 56(4), 1360-1446.
-        - Come to class ready to discuss the structure of the paper and how the authors engage with other economimc literature. Pay close attention to how they organized the papers, what they tell us about each paper, and the language they use in discussing the papers.
-        
-- Summarizing economic papers, workflow
+#### Mon 9/7 
 
-    + Monday: 
-        - Replicating ECO 220 labs with reproducible code
+**Read** Bryan, J. (2018). Excuse me, do you have a moment to talk about version control?. *The American Statistician*, 72(1), 20-27.
+**Prepare** by starting [HW 1](homework/hw1-git-basics). You do **not** need to finish the homework and class will be used for troubleshooting and other questions.
+
+#### Wed 9/9
+
+**Read** Almond, D., Currie, J., & Duque, V. (2018). Childhood circumstances and adult outcomes: Act II. *Journal of Economic Literature*, 56(4), 1360-1446. Come to class ready to discuss the structure of the paper and how the authors engage with other economimc literature. Pay close attention to how they organized the papers, what they tell us about each paper, and the language they use in discussing the papers.
+
+### Week 3 (9/14 - 9/18): Summarizing economic papers, workflow
+
+#### Mon 9/14
+
+**Submit** [HW 1](homework/hw1-git-basics)
+**In-class** Begin work on [HW 2](homework/hw2-regressions-w-code)
         
-    + Wednesday: How to summarize an economic article (that you may not fully understand)
-        - Submit an RMarkdown document via Git describing your search of the literature on a topic of your choosing. You should describe the process you followed and include a list of at least five papers. The papers should represent different phases of your literature search (that is, you should not simply report the first five papers that come up when you enter a search term). For each paper, include a complete citation in APA format and a brief assessment of the journal (or other location) in which the paper appears. You do *not* need to summarize the papers themselves but should bring a copy of the one you are most interested in to class.
-        - Reading skills: abstract, introduction, and conclusion; focused reading of data and methods
+#### Wed 9/16
+How to summarize an economic article (that you may not fully understand)
+
+**Submit** an RMarkdown document to your lit-review repo describing your search of the literature on a topic of your choosing. You should describe the process you followed and include a list of at least five papers. The papers should represent different phases of your literature search (that is, you should not simply report the first five papers that come up when you enter a search term). For each paper, include a complete citation in APA format and a brief assessment of the journal (or other location) in which the paper appears. You do *not* need to summarize the papers themselves.
+
+**Bring** a copy of the one you are most interested in to class (or to your work session).
+**Activity** Reading skills: abstract, introduction, and conclusion; focused reading of data and methods
         - Construct a summary of one of your articles (due before class next Wednesday)
-    
-- Classifying the literature
+
+### Week 4 (9/21 - 9/25): Classifying the literature
+
+#### Mon 9/21
+**Submit** [HW 2](homework/hw2-regressions-w-code)
+
+#### Wed 9/23
+**Submit** paper summary
+**Activity** classifying the literature
+
 - Literature presentations  
 
     + Final literature review due next Wednesday
