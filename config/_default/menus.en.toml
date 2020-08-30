@@ -1,7 +1,4 @@
 [[main]]
-  name = "Susan Sayre | Smith College | Fall 2020"
-  
-[[main]]
   identifier = "docs"
   name = "Course Materials"
   url = "materials"
