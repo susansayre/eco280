@@ -17,22 +17,22 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.main]]
     name = "Schedule"
     url = "/schedule"
-    weight = 1.5
+    weight = 2
     
 [[menu.main]]
     name = "Assignments"
     url = "/assignments/"
-    weight = 2
+    weight = 3
     
 [[menu.main]]
     name = "Homework"
     url = "/homework/"
-    weight = 3
+    weight = 4
     
 [[menu.main]]
     name = "Slack"
     url = "http://smi-eco280-02-202101.slack.com"
-    weight = 4
+    weight = 5
 
 [params]
     description = "A website built through Hugo and blogdown."
