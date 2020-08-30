@@ -16,56 +16,77 @@ Course Intro and Software Setup
 #### Wed 9/2
 Introduction to class
 
-### Week 2 (9/7 - 9/11): Searching the literature/Git
+### Week 2 (9/7 - 9/11)
+Searching the literature/Git
 
 #### Mon 9/7 
 
 **Read** [Bryan, J. (2018). Excuse me, do you have a moment to talk about version control?. The American Statistician, 72(1), 20.](http://sfxhosted.exlibrisgroup.com/smith?sid=google&auinit=J&aulast=Bryan&atitle=Excuse%20me%2C%20do%20you%20have%20a%20moment%20to%20talk%20about%20version%20control%3F&title=The%20American%20Statistician&volume=72&issue=1&date=2018&spage=20&issn=0003-1305)
+
 **Prepare** by starting [HW 1](homework/hw1-git-basics). You do **not** need to finish the homework and class will be used for troubleshooting and other questions.
 
 #### Wed 9/9
 
-**Read** Almond, D., Currie, J., & Duque, V. (2018). Childhood circumstances and adult outcomes: Act II. *Journal of Economic Literature*, 56(4), 1360-1446. Come to class ready to discuss the structure of the paper and how the authors engage with other economimc literature. Pay close attention to how they organized the papers, what they tell us about each paper, and the language they use in discussing the papers.
+**Read** Almond, D., Currie, J., & Duque, V. (2018). Childhood circumstances and adult outcomes: Act II. *Journal of Economic Literature*, 56(4), 1360-1446.
 
-### Week 3 (9/14 - 9/18): Summarizing economic papers, workflow
+**Discussion**  Paper structure, how the authors engage with other economimc literature. Pay close attention to how they organized the papers, what they tell us about each paper, and the language they use in discussing the papers.
+
+**Activity** Searching the literature
+
+### Week 3 (9/14 - 9/18)
+
+Summarizing economic papers, workflow
 
 #### Mon 9/14
 
 **Submit** [HW 1](homework/hw1-git-basics)
-**In-class** Begin work on [HW 2](homework/hw2-regressions-w-code)
+
+**Activity** Begin work on [HW 2](homework/hw2-regressions-w-code)
         
 #### Wed 9/16
-How to summarize an economic article (that you may not fully understand)
 
 **Submit** an RMarkdown document to your lit-review repo describing your search of the literature on a topic of your choosing. You should describe the process you followed and include a list of at least five papers. The papers should represent different phases of your literature search (that is, you should not simply report the first five papers that come up when you enter a search term). For each paper, include a complete citation in APA format and a brief assessment of the journal (or other location) in which the paper appears. You do *not* need to summarize the papers themselves.
 
-**Bring** a copy of the one you are most interested in to class (or to your work session).
 **Activity** Reading skills: abstract, introduction, and conclusion; focused reading of data and methods
-        - Construct a summary of one of your articles (due before class next Wednesday)
 
-### Week 4 (9/21 - 9/25): Classifying the literature
+**Start** Constructing a summary of your chosen article (due Wed 9/23)
+
+### Week 4 (9/21 - 9/25)
+
+Classifying the literature
 
 #### Mon 9/21
 **Submit** [HW 2](homework/hw2-regressions-w-code)
 
+**Activity** begin work on HW 3
+
 #### Wed 9/23
+
 **Submit** paper summary
 **Activity** classifying the literature
 
-- Literature presentations  
+### Week 5 (9/28 - 10/2)
 
-    + Final literature review due next Wednesday
+Literature presentations, live or asynchronous
+[Literature review](papers/lit-review) due next Wed 10/7
+
+#### Mon 9/28
+**Submit** HW 3
 
 ## Section 2: Reproducible research
 
-In this part of the course, we focus on developing good practices for reproducible research. You work will consist of a mix of homework exercises and interim progress checkpoints o7n your group project to reproduce the analysis in an existing economic journal article. I will provide a list of suggested articles to reproduce.
+In this part of the course, we focus on developing good practices for reproducible research. You work will consist of a mix of homework exercises and interim progress checkpoints on your group project to reproduce the analysis in an existing economic journal article. I will provide a list of suggested articles to reproduce.
 
-- Organization
+### Week 6 (10/5 - 10/9) Organization
 
-    + File and folder structure
-    + Relative paths, collaboration with others
-    + Storing raw data
-    + Data manipulation with code
+- File and folder structure
+- Relative paths, collaboration with others
+- Storing raw data
+- Data manipulation with code
+
+#### Wed 10/7
+
+**Submit** [literature review](papers/lit-review)
     
 - Data wrangling
 
