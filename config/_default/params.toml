@@ -1,6 +1,6 @@
 logo = false
-logoText = "ECO 280"
-logoType = "short" # long, short
+logoText = "ECO 280 | Susan Sayre | Smith College | Fall 2020"
+logoType = "long" # long, short
 description = "The ZDoc theme for Hugo example site."
 
 themeOptions = ["light", "dark"]
