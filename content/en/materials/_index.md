@@ -4,5 +4,3 @@ description: test post index
 draft: false
 title: ECO 280 Course Materials
 ---
-
-Course materials
