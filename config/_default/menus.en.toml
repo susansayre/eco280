@@ -1,0 +1,11 @@
+[[main]]
+  identifier = "docs"
+  name = "Course Materials"
+  url = "materials"
+  weight = 1
+
+[[main]]
+  identifier = "slack"
+  name = "Slack"
+  url = "http://smi-eco280-02-202101.slack.com"
+  weight = 2

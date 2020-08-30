@@ -1,6 +1,6 @@
 baseURL = "http://example.org"
-title = "ECO 280"
-theme = "hugo-theme-zdoc"
+title = "Hugo Zdoc Theme"
+theme = "zdoc"
 
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
