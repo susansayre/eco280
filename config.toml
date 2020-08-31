@@ -5,6 +5,7 @@ theme = "hugo-theme-zdoc"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 hasCJKLanguage = false
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 copyright = "&copy;{year}, All Rights Reserved"
 timeout = 10000
