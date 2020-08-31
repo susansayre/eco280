@@ -25,7 +25,7 @@ This course will be especially useful for students interested in conducting orig
 
 ## Class Zoom Sessions
 
-We will have synchronous Zoom sessions on MW from 10:55am-12:10pm EST. Use [this Zoom link](https://smith.zoom.us/j/96396536926) to join our sessions. I encourage but do not require you to have your camera on if you are joining live. When you join, you will need to sign in to you Zoom account and will be put in the waiting room. Please use your Smith zoom account so that I know who you are and can let you in promptly.
+We will have synchronous Zoom sessions on MW from 10:55am-12:10pm EST. Since this page is publicly available, the Zoom link for our sessions is posted on Moodle and our Slack channel. I encourage but do not require you to have your camera on if you are joining live. When you join, you will need to sign in to you Zoom account and will be put in the waiting room. Please use your Smith zoom account so that I know who you are and can let you in promptly.
 
 Class sessions in this course will be a mix of presentation of methods and time for students to experiment and practice the techniques introduced. To the extent practical, I will aim to have the presentation of methods available asynchronously and use synchronous sessions for hands-on activities that can also be replicated by students who are unable to attend synchronously. Any parts of class that involve presentation of methods will be recorded and posted for asynchronous students to access. Depending on the specifics of the activity, hands-on activities may or may not be recorded, but directions for completing the actitivies asynchronously will be available.
 
