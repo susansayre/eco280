@@ -24,8 +24,7 @@ There are several intermediate deadlines associated with this paper including:
 
 - Wed Sep 16: Literature search description
 - Wed Sep 23: Single article summary
-- Mon Sep 28: Thematic grouping of papers
-- Mon Sep 28 or Wed Sep 30: Mini-presentation
+- Mon Sep 28: Mini-presentation of thematic grouping of your articles
 
 ## **What** I want you to do
 
@@ -63,36 +62,42 @@ This assignment is designed to help you develop the following skills:
 
 ## Grading Rubric
 
-- **A/A-**: Papers in this category synthesize most of the key literature on their topic, identifying key themes and controversies within the literature. In doing so, the paper makes an argument about what the literature does or does not tell us and provides evidence in support of that argument. Discussion of the papers focuses on what we can learn from the literature as whole. Papers are described accurately in scholarly language like that used in the sample papers.
+- **A/A-**: Papers in this category synthesize most of the key literature on their topic, identifying key themes and controversies within the literature. In doing so, the paper makes an argument about what the literature does or does not tell us and provides evidence in support of that argument. Discussion of the papers focuses on what we can learn from the literature as whole. Papers are described accurately in scholarly language like that used in the sample papers. Intermediate deadlines met consistently.
 
-- **B+**: Papers in this category share many features with those in the A categories, but also have some weaknesses. They may miss a couple particularly important papers or lean more toward description of the literature as opposed to synthesis. Alternatively, the paper may make a strong argument but provide less careful evidence in support of that argument. Language or tone may be less appropriate for an academic paper.
+- **B+**: Papers in this category share many features with those in the A categories, but also have some weaknesses. They may miss a couple particularly important papers or lean more toward description of the literature as opposed to synthesis. Alternatively, the paper may make a strong argument but provide less careful evidence in support of that argument. Language or tone may be less appropriate for an academic paper. Most intermediate deadlines met on time.
 
-- **B/B-**: Papers in this category may have individual strong features but lack a clear argument. The paper may read like an annotated bibliography, reporting on the conclusions of a series of papers without making adequate connections between the papers or offering analysis of the state of the literature. The paper may miss important parts of the literature or mischaracterize some of the findings. Language may be more conversational than academic.
+- **B/B-**: Papers in this category may have individual strong features but lack a clear argument. The paper may read like an annotated bibliography, reporting on the conclusions of a series of papers without making adequate connections between the papers or offering analysis of the state of the literature. The paper may miss important parts of the literature or mischaracterize some of the findings. Language may be more conversational than academic. Intermediate deadlines may not have been met consistently.
 
-- **C+ or below**: Papers in this category have significant weaknesses as an academic literature review. They may engage only a small number of papers or make an argument about the literature that is unsupported by the evidence. Alternatively, they may fail to include any synthesis across topics.
+- **C+ or below**: Papers in this category have significant weaknesses as an academic literature review. They may engage only a small number of papers or make an argument about the literature that is unsupported by the evidence. Alternatively, they may fail to include any synthesis across topics. Several intermediate deadlines may have been missed or late.
 
 ## Intermediate Products
 
-As noted above, there are several intermediate deadlines associated with this project to help keep you on track.
+As noted above, there are several intermediate deadlines associated with this project to help keep you on track. Intermediate products will not be graded, but completing them on time will contribute to your overall literature review grade.
 
-### Literature search
+### Literature search description
 
 **Submit** to your GitHub repo by Wed 9/16
 
-Using a mix of Google Scholar and EconLit, search the economic literature on a topic of your choosing. Write a brief summary of your literature search in an RMarkdown document and push it to your GitHub lit-review repo (as described in [HW 1](https://eco280smith.netlify.app/materials/homework/hw1-git-basics/#initialize-your-lit-review-repo)). You should describe the search terms you used, how you traced papers, etc and provide bibliographic information for the  papers that seemed interesting. 
+Using a mix of Google Scholar and EconLit, search the economic literature on a topic of your choosing. Write a brief summary of your literature search in an RMarkdown document and push it to your GitHub lit-review repo (as described in [HW 1](https://eco280smith.netlify.app/materials/homework/hw1-git-basics/#initialize-your-lit-review-repo)). You should describe the search terms you used, how you traced papers, etc and provide bibliographic information for the papers that seemed interesting/relevant. You should **not** provide a complete list of all articles that a particular search term returned unless it was a small number of papers and you deemed all of them relevant. If particular search terms you used returned a very large number of results or primarily returned papers on unrelated topics, note that in your description and describe how you adapted. 
 
 When searching the literature, you should start with a couple keywords you think are interesting and then adapt based on what you find. It often takes a little while to narrow in on the jargon and phrases economists use for particular topics and to adapt your topic enough to find something that economists have written about enough. Once you have a couple papers that sound interesting, try **tracing backwards** (e.g. looking at their literature reviews and reference sections to see who they cited). Then try **tracing forwards**. [Google Scholar](http://scholar.google.com) is great for this because it is easy to see who has cited a paper. Papers with more citations are more influential, although the publication date of the paper is important here.
 
 While you should include mostly published, peer-reviewed journal article, economics is somewhat unusual as a discipline in that working papers are often cited as well.
 
-### Article summary
+### Single article summary
 
 **Submit** to your GitHub repo by Wed 9/23
 
-Add description once complete
+Using RMarkdown, write a 1-2 page summary of one of the articles you located in your literature search. Note that this summary will be more detailed than the discussion you will include in your literature review for most of the papers you discuss. Writing the summary is designed to give you practice in digesting economic journal articles, which are often quite dense.
 
-### Article classification/presentation
+Begin by screening the articles you have located by reading the abstract and potentially skimming the introduction. As you read, decide how interesting and relevant you think the article will be for understanding your topic of interest. Pick an empirical article (one that uses statistical analysis to answer a research question) that sounds especially interesting to you.
+
+Work through the steps
+
+### Mini-presentation
 
 Live in class on 9/28 or 9/30 **or** recorded and shared with the class before class on 9/30
 
-You will make a brief presentation either live in class or recorded asynchronously and shared with class. In this video, you will use a couple slides to describe what you've discovered about the economic literature on your topic. Presentations/videos should be 3-5 minutes long.
+You will make a brief presentation either live in class or recorded asynchronously and shared with class. In this presentation, you will use a couple slides to describe what you've discovered about the economic literature on your topic. Presentations/videos should be 3-5 minutes long. 
+
+A key element of the presentation is identifying one or more ways to group the articles thematically. As discussed above, thematic groupings can be organized in a number of different ways including: by method, by finding, or by sub-topic.

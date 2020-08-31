@@ -5,6 +5,13 @@ draft: false
 title: FAQ
 weight: 5
 ---
+## Searching the literature
+
+### How do I set Google Scholar to show links to full text available at Smith?
+
+In the upper right of the Google Scholar page, click on `Sign In`. Depending on how your browser is configured, you may have to tell the browser **not** to access Google Scholar via proxy server. I recommend only disabling the proxy server for the Google Scholar site. 
+
+Once you're signed in, click on the three bars on the left to get the menu and select `Settings`. On the settings page, choose `Library links` and search for Smith College. Check the box next to Smith College Libraries and select `Save`.
 
 ## Git via RStudio
 

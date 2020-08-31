@@ -23,6 +23,18 @@ This course will be especially useful for students interested in conducting orig
 - Implement the plan effectively in statistical software (R and Stata)
 - Use Git/GitHub to share work with peers and document the development of your computer code
 
+## Class Zoom Sessions
+
+We will have synchronous Zoom sessions on MW from 10:55am-12:10pm EST. Use [this Zoom link](https://smith.zoom.us/j/96396536926) to join our sessions. I encourage but do not require you to have your camera on if you are joining live. When you join, you will need to sign in to you Zoom account and will be put in the waiting room. Please use your Smith zoom account so that I know who you are and can let you in promptly.
+
+Class sessions in this course will be a mix of presentation of methods and time for students to experiment and practice the techniques introduced. To the extent practical, I will aim to have the presentation of methods available asynchronously and use synchronous sessions for hands-on activities that can also be replicated by students who are unable to attend synchronously. Any parts of class that involve presentation of methods will be recorded and posted for asynchronous students to access. Depending on the specifics of the activity, hands-on activities may or may not be recorded, but directions for completing the actitivies asynchronously will be available.
+
+During most class Zoom meeting, I encourage you to use Slack rather than Zoom chat for asking questions. This works better when we're using breakout rooms as we can all still communicate over Slack. Moreover, our discussion will be archived on Slack for later reference.
+
+In some cases, we may have a class "meeting" over Slack if we are primarily working on an individual activity. In this case, I will post the class activity on Slack and will be available throughout the class meeting to answer questions on Slack and/or connect briefly over video if you have a more in depth question. How often we connect live over Zoom or "meet" via Slack is open to discussion as a group.
+
+In addition to class sessions, each student will be part of a study group. These groups will be formed based on a mix of time availability, programming experience in R and Stata, and estimates of how often you'll be able to attend class synchronously. The goal is for students participating primarily asynchronously to have a regular meeting time to work through class activities with other peers who are also primarily participating asynchronously. If you anticipate having a schedule that is too irregular to accommodate this, please contact me so that we can identify a workable approach for you to complete class activities.
+
 ## Assessment
 
 - 40% Homework exercises
@@ -36,9 +48,9 @@ This course will be especially useful for students interested in conducting orig
 
 This course will use two software tools extensively: R/RStudio and Git/GitHub. These are the tools I use regularly in my own research and their integration provides valuable economies of scale. While we will default to using R, the course will also cover Stata programming given its frequent use in economics. We will emphasize the *process* of programmatic data analysis over expertise in a specific language. You will have one homework exercise that will ask you to complete the same task in *both* R and Stata and will have a choice of software for several other assignments.
 
-## Late work
+## Late work and flexibility
 
-Late work will be penalized 5% of the grade for each 24 hours or portion thereof late.
+The official late policy for the course is that late work will be penalized 5% of the grade for each 24 hours or portion thereof late. However, I recognize that remote learning creates additional challenges for all of us. My experience is that having specific deadlines can help keep you on track with your learning, so the due dates and official late policy will remain in effect. At the same time, I am open to granting extensions if needed. To help keep the deadlines "real", you need to contact me before the due date if you believe you'll need an extension. In general, you do not need to provide a detailed description of why you need an extension, but if you are regularly having trouble meeting the course deadlines, I may ask you to set up a meeting to discuss how I can help you stay on track. Since I have set aside specific times for grading, assignments turned in late will be graded last and may receive feedback noticeably later than other classmates.
 
 ## Office hours
 
@@ -53,19 +65,19 @@ As you may know, college guidelines suggest that students should spend roughly 1
 
 Note that these breakdowns will shift to some degree over the course of each unit in the course. During the first part of a unit, your time should be more focused on the homework exercises. These will taper off at the end of each unit to make space for focusing on your paper.
 
-## Class Zoom Sessions
-
-Given that the students in this course are overwhelmingly juniors and seniors who are off-campus this fall, the course will be fully remote. Class sessions in this course will be a mix of presentation of methods and time for students to experiment and practice the techniques introduced. To the extent practical, I will aim to have the presentation of methods available asynchronously and use synchronous sessions for hands-on activities that can also be replicated by students who are unable to attend synchronously.
-
 ## A note on scheduling and flexibility
 
 As we all learned last spring, remote coursework raises a number of challenges, many of which are related to schedule. I anticipate that students will be participating in this course from a wide variety of time zones. As a result, I will plan the material so that students are able to participate asynchronously. Groups for group work in the course will be arranged using time availability as a primary criterion. If you have other constraints on your time availability that you think may affect your work in this class, please let me know.
 
-The primary constraint on my availability is my childcare responsibilities. I have two children, who are in first and third grade. *Fill in schooling/schedule issues once I know something*
+The primary constraint on my availability is my childcare responsibilities. I have two children, who are in first and third grade. Their school will be remote for at least the first part of the semester and potentially the whole semester. The specifics of their schedule are still evolving, but there will be blocks of time during the week in which I will be unavailable as I'll be supervising their school work. I will also generally be unable to answer email or schedule appointments from 5-8:30pm EST. Given time zone challenges, I anticipate scheduling at least one or two evening times when I will be available for questions.
 
-## E-mail
+## Slack
 
-I enocurage you to email me at ssayre\@smith.edu with questions. I generally check messages no more than a couple times a day during regular working hours and rarely outside of working hours. I will make every effort to respond to your questions within one business day (i.e. within 24 hours during the week and by the end of the day Monday for messages sent over the weekend).
+The primary forum for communication in this class will be our [Slack workspace](http://smi-eco280-02-202101.slack.com/). Please use the #questions channel to post general questions about class and the assignment specific channels (e.g. #hw1) to ask questions about particular assignments. Please look through the Slack history and the course materials on the class website briefly before posting to see if your question is answered there. Unless your question is personal, I ask that you post in the public channel so that everyone can benefit from each others' questions and answers. I also **strongly** encourage you to answer your classmates' questions if you can. As a general rule, you can learn as much about programming from helping others as you do from completing exercises yourself.
+
+If you have personal questions, my preference is that you send a direct message to me on Slack, but you can also email me at ssayre\@smith.edu.
+
+If at any point in the semester, you have trouble accessing Slack, please let me know. Email is best, but I have also created a forum on our Moodle site where you can post a message in case you are having trouble with email as well.
 
 ## Academic Honesty
 
