@@ -51,7 +51,7 @@ When you get to Chapter 15, ignore the parts about GitLab and Bitbucket.
 
 To get us ready for HW 2, you will *also* install Stata on your computer this week. You don't need to do anything with it for this homework other than install and open the software and respond to my thread telling me it is installed.
 
-*For this year only*, the College has purchased a site license for Stata that will allow you to download and install the software on your own computer. The license is a limited term license and you may need to return to using lab computers next year. To install Stata, follow the directions [on this page](http://www.science.smith.edu/cats/software-for-ongoing-science-classes/). *Note:* As of 8/28, the new license info was not yet available. Post on our Slack channel if you try installing Stata and it doesn't work.
+*For this year only*, the College has purchased a site license for Stata that will allow you to download and install the software on your own computer. The license is a limited term license and you may need to return to using lab computers next year. To install Stata, follow the directions [on this page](http://www.science.smith.edu/cats/software-for-ongoing-science-classes/). *Note:* The directions are posted in a Google doc. Let me know if you have trouble accessing them.
 
 ## Initialize your lit review repo
 
