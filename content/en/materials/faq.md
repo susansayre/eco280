@@ -5,6 +5,14 @@ draft: false
 title: FAQ
 weight: 5
 ---
+## Class Logistics
+
+### Do I need to attend class synchronously?
+
+No. Most of our class sessions will be designated work sessions and attendance is not required. I will usually post the class activity in advance and you are welcome to work through it on your own. In a few cases, you may need to work with a classmate on part of the activity but can do that outside of class if it is easier.
+
+I will record class sessions in which I am presenting information, but I will do my best to ensure that all critical course information goes through Slack. I will also sometimes post videos for you to watch outside of class time.
+
 ## Searching the literature
 
 ### How do I set Google Scholar to show links to full text available at Smith?

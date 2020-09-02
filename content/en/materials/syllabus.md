@@ -1,6 +1,6 @@
 ---
 date: "2020-01-28T00:38:48+09:00"
-description: test post
+description: ECO 280 Syllabus
 draft: false
 title: Syllabus
 weight: 1
