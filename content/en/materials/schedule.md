@@ -23,7 +23,7 @@ Searching the literature/Git
 
 **Read** [Bryan, J. (2018). Excuse me, do you have a moment to talk about version control?. The American Statistician, 72(1), 20.](http://sfxhosted.exlibrisgroup.com/smith?sid=google&auinit=J&aulast=Bryan&atitle=Excuse%20me%2C%20do%20you%20have%20a%20moment%20to%20talk%20about%20version%20control%3F&title=The%20American%20Statistician&volume=72&issue=1&date=2018&spage=20&issn=0003-1305)
 
-**Prepare** by starting [HW 1](homework/hw1-git-basics). You do **not** need to finish the homework and class will be used for troubleshooting and other questions.
+**Prepare** by starting [HW 1](../homework/hw1-git-basics). You do **not** need to finish the homework and class will be used for troubleshooting and other questions.
 
 #### Wed 9/9
 
