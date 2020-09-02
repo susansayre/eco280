@@ -26,6 +26,8 @@ There are several intermediate deadlines associated with this paper including:
 - Wed Sep 23: Single article summary
 - Mon Sep 28: Mini-presentation of thematic grouping of your articles
 
+While the other elements should be written independently, you are welcome to work in groups of up to 3 students on the literature search if there are other students interested in similar topics. As you search the literature the first time, it can be quite helpful to have collaborators to check in with. If you work in a group, each group member should write a summary of a different article and develop their own grouping of the literature.
+
 ## **What** I want you to do
 
 Write a synthetic review of the economic literature on a topic of your choosing.

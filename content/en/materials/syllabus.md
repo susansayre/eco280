@@ -44,11 +44,7 @@ In addition to class sessions, each student will be part of a study group. These
 
 40% of your course grade will be based on regular homework exercises focused primarily on developing practical data skills. In addition, you will complete three papers in the course: a synthetic review of the economic literature on a topic of your choosing, a fully documented replication of an existing economic research project (done in groups), and a fully documented and reproducible **descriptive** data analysis on a topic of your own choosing. You will present a brief summary of both your literature review and your data analysis to the class.
 
-## Software
-
-This course will use two software tools extensively: R/RStudio and Git/GitHub. These are the tools I use regularly in my own research and their integration provides valuable economies of scale. While we will default to using R, the course will also cover Stata programming given its frequent use in economics. We will emphasize the *process* of programmatic data analysis over expertise in a specific language. You will have one homework exercise that will ask you to complete the same task in *both* R and Stata and will have a choice of software for several other assignments.
-
-## Late work and flexibility
+## Late work policy
 
 The official late policy for the course is that late work will be penalized 5% of the grade for each 24 hours or portion thereof late. However, I recognize that remote learning creates additional challenges for all of us. My experience is that having specific deadlines can help keep you on track with your learning, so the due dates and official late policy will remain in effect. At the same time, I am open to granting extensions if needed. To help keep the deadlines "real", you need to contact me before the due date if you believe you'll need an extension. In general, you do not need to provide a detailed description of why you need an extension, but if you are regularly having trouble meeting the course deadlines, I may ask you to set up a meeting to discuss how I can help you stay on track. Since I have set aside specific times for grading, assignments turned in late will be graded last and may receive feedback noticeably later than other classmates.
 
@@ -65,11 +61,15 @@ As you may know, college guidelines suggest that students should spend roughly 1
 
 Note that these breakdowns will shift to some degree over the course of each unit in the course. During the first part of a unit, your time should be more focused on the homework exercises. These will taper off at the end of each unit to make space for focusing on your paper.
 
-## A note on scheduling and flexibility
+## Scheduling and flexibility
 
 As we all learned last spring, remote coursework raises a number of challenges, many of which are related to schedule. I anticipate that students will be participating in this course from a wide variety of time zones. As a result, I will plan the material so that students are able to participate asynchronously. Groups for group work in the course will be arranged using time availability as a primary criterion. If you have other constraints on your time availability that you think may affect your work in this class, please let me know.
 
 The primary constraint on my availability is my childcare responsibilities. I have two children, who are in first and third grade. Their school will be remote for at least the first part of the semester and potentially the whole semester. The specifics of their schedule are still evolving, but there will be blocks of time during the week in which I will be unavailable as I'll be supervising their school work. I will also generally be unable to answer email or schedule appointments from 5-8:30pm EST. Given time zone challenges, I anticipate scheduling at least one or two evening times when I will be available for questions.
+
+## Software
+
+This course will use two software tools extensively: R/RStudio and Git/GitHub. These are the tools I use regularly in my own research and their integration provides valuable economies of scale. While we will default to using R, the course will also cover Stata programming given its frequent use in economics. We will emphasize the *process* of programmatic data analysis over expertise in a specific language. You will have one homework exercise that will ask you to complete the same task in *both* R and Stata and will have a choice of software for several other assignments.
 
 ## Slack
 

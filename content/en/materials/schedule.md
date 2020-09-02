@@ -29,9 +29,9 @@ Searching the literature/Git
 
 **Read** [Almond, D. (2018). Childhood circumstances and adult outcomes: Act II. *Journal of Economic Literature*, 56(4), 1360.](http://sfxhosted.exlibrisgroup.com/smith?sid=google&auinit=D&aulast=Almond&atitle=Childhood%20circumstances%20and%20adult%20outcomes%3A%20Act%20II&title=Journal%20of%20Economic%20Literature&volume=56&issue=4&date=2018&spage=1360&issn=0022-0515)
 
-**Discussion**  Paper structure, how the authors engage with other economimc literature. Pay close attention to how they organized the papers, what they tell us about each paper, and the language they use in discussing the papers.
+**Discussion**  Paper structure, how the authors engage with other economimc literature. Pay close attention to how they organized the papers they discuss, what they tell us about each paper, and the language they use in discussing the papers.
 
-**Activity** Searching the literature
+**Activity** Searching the literature in a group
 
 ### Week 3 (9/14 - 9/18)
 
@@ -77,35 +77,67 @@ Literature presentations, live or asynchronous
 
 In this part of the course, we focus on developing good practices for reproducible research. You work will consist of a mix of homework exercises and interim progress checkpoints on your group project to reproduce the analysis in an existing economic journal article. I will provide a list of suggested articles to reproduce.
 
-### Week 6 (10/5 - 10/9) Organization
-
-- File and folder structure
-- Relative paths, collaboration with others
-- Storing raw data
-- Data manipulation with code
+### Week 6 (10/5 - 10/9) 
+Locating, storing, importing, and working with data
 
 #### Wed 10/7
 
 **Submit** [literature review](papers/lit-review)
-    
-- Data wrangling
 
-    + Creating new variables from existing ones (mutate, gen)
-    + Computing summary statistics by group (summarize, collapse)
-    + Reorganizing data (pivot, reshape)
-    + Merging data from different sources (xxx_join, merge)
-    
-    Key point: Before you start to write code, first determine what your data looks like now **and** what you want it to look like. Then plan the steps you need to get from one to the other.
-    
-- Working with strings and dates  
-- Implementing regression methods with code
-- Creating output with code
+### Week 7 (10/12 - 10/16)
+
+#### Mon 10/12
+Fall Break
+
+#### Wed 10/14
+
+Data wrangling I
+
+### Week 8 (10/19 - 10/23)
+
+Data wrangling II
+
+### Week 9 (10/26 - 10/30)
+
+Working with dates and strings
+
+### Week 10 (11/2 - 11/6)
+
+Advanced regressions and tables with code
 
 ## Section 3: Understanding your data
 
 In this part of the course, we will focus on data exploration. The course will focus on data tasks you are familiar with from other courses but will emphasize using these summary measures to understand what's happening in your data. During this phase of the course, you will have several relatively short homework exercises, but will spend most of your time working on understanding a dataset of your own choosing. 
-    
-    + No class Wednesday (Thanksgiving Break)
-    
 
-- Final projects due on the last day of exams
+### Week 11 (11/9 - 11/13)
+
+Using summary statistics to understand and clean your data
+
+### Week 12 (11/16 - 11/19)
+
+Graphics
+
+#### Mon 11/16
+**Submit** [Paper replication](papers/replication)
+
+### Week 13 (11/23 - 11/27)
+
+Programmatic data downloads
+
+#### Wed 11/24
+
+*Thanksgiving Break*
+    
+### Week 14 (11/30 - 12/4)
+
+Maps
+
+### Week 15 (12/7 - 12/11)
+
+TBD/Project work
+
+### Finals (12/14 - 12/17)
+
+#### Thurs 12/17
+
+**Submit** [Data analysis project](papers/analysis)
