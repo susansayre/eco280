@@ -21,17 +21,23 @@ Searching the literature/Git
 
 #### Mon 9/7 
 
+[Slack post with recording link](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1599072200000700)
+
 **Read** [Bryan, J. (2018). Excuse me, do you have a moment to talk about version control?. The American Statistician, 72(1), 20.](http://sfxhosted.exlibrisgroup.com/smith?sid=google&auinit=J&aulast=Bryan&atitle=Excuse%20me%2C%20do%20you%20have%20a%20moment%20to%20talk%20about%20version%20control%3F&title=The%20American%20Statistician&volume=72&issue=1&date=2018&spage=20&issn=0003-1305)
 
 **Prepare** by starting [HW 1](/materials/homework/hw1-git-basics). You do **not** need to finish the homework and class will be used for troubleshooting and other questions.
 
 #### Wed 9/9
 
+[Slack post with recording link]()
+
 **Read** [Almond, D. (2018). Childhood circumstances and adult outcomes: Act II. *Journal of Economic Literature*, 56(4), 1360.](http://sfxhosted.exlibrisgroup.com/smith?sid=google&auinit=D&aulast=Almond&atitle=Childhood%20circumstances%20and%20adult%20outcomes%3A%20Act%20II&title=Journal%20of%20Economic%20Literature&volume=56&issue=4&date=2018&spage=1360&issn=0022-0515)
 
 **Discussion**  Paper structure, how the authors engage with other economimc literature. Pay close attention to how they organized the papers they discuss, what they tell us about each paper, and the language they use in discussing the papers.
 
 **Activity** Searching the literature in a group
+
+Since we didn't get a chance to watch them in class, the links to two short videos on how to search using EconLit and Google Scholar are in [this Slack post](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1599593970002200)
 
 ### Week 3 (9/14 - 9/18)
 
