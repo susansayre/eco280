@@ -39,9 +39,9 @@ Summarizing economic papers, workflow
 
 #### Mon 9/14
 
-**Submit** [HW 1](/en/materials/homework/hw1-git-basics)
+**Submit** [HW 1](/materials/homework/hw1-git-basics)
 
-**Activity** Begin work on [HW 2](/en/materials/homework/hw2-regressions-w-code)
+**Activity** Begin work on [HW 2](/materials/homework/hw2-regressions-w-code)
         
 #### Wed 9/16
 
@@ -56,7 +56,7 @@ Summarizing economic papers, workflow
 Classifying the literature
 
 #### Mon 9/21
-**Submit** [HW 2](/en/materials/homework/hw2-regressions-w-code)
+**Submit** [HW 2](/materials/homework/hw2-regressions-w-code)
 
 **Activity** begin work on HW 3
 
@@ -68,7 +68,7 @@ Classifying the literature
 ### Week 5 (9/28 - 10/2)
 
 Literature presentations, live or asynchronous
-[Literature review](/en/materials/papers/lit-review) due next Wed 10/7
+[Literature review](/materials/papers/lit-review) due next Wed 10/7
 
 #### Mon 9/28
 **Submit** HW 3
@@ -82,7 +82,7 @@ Locating, storing, importing, and working with data
 
 #### Wed 10/7
 
-**Submit** [literature review](/en/materials/papers/lit-review)
+**Submit** [literature review](/materials/papers/lit-review)
 
 ### Week 7 (10/12 - 10/16)
 
@@ -118,7 +118,7 @@ Using summary statistics to understand and clean your data
 Graphics
 
 #### Mon 11/16
-**Submit** [Paper replication](/en/materials/papers/replication)
+**Submit** [Paper replication](/materials/papers/replication)
 
 ### Week 13 (11/23 - 11/27)
 
@@ -140,4 +140,4 @@ TBD/Project work
 
 #### Thurs 12/17
 
-**Submit** [Data analysis project](/en/materials/papers/analysis)
+**Submit** [Data analysis project](/materials/papers/analysis)
