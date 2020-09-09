@@ -7,8 +7,7 @@ title: HW 2 - Regressions with code
 
 ## Submission details
 
-- Due date/time:
-- Commit and **push** working code and your output files to your github repo
+- Commit and **push** working code and your output files to your github repo by 10:45am EST on Mon Sep 21
 
 In this lab, you will be completing a modified version of one of the exercise that appears in one of the ECO 220 labs. In ECO 220, the emphasis is on running a regression and interpreting the output. Our emphasis is on learning to generate reproducible research using computer code. You will complete the exercise in both Stata and R and will submit your work by committing and pushing your code to GitHub. Full credit requires both the output and working computer code that generates the output. 
 
