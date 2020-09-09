@@ -29,7 +29,9 @@ We will follow these basic steps in both R and Stata, but doing so will look dif
 
 ## Initial setup
 
-Use this link to accept the assignment on GitHub. This will create your personal repository, which you will then clone to your computer. I recommend doing this in RStudio [following these steps](https://eco280smith.netlify.app/materials/faq/#how-do-i-create-an-r-project-from-a-github-repo). Once you've completed this step, you will have a folder on your computer called hw2-gitusername.
+*Note:* Throughout these directions and our assignments more generally, I will use phrases like `gitusername` or `path/to/local/directory` where you should replace these with the relevant versions for you/your computer. As an example, everywhere the phrase `gitusername` appears in these directions, you should replace it with the user name you set up when you created your github account. I won't always explicitly point out the need for these replacements, but I hope it will usually be self-explanatory when these should be replaced. If a command fails with a file/folder not found error, one of the first things to consider is whether there's a piece of the command that could have been one of these replacement indicators.
+
+Use this link to [accept the assignment on GitHub](https://classroom.github.com/a/88Rw8reQ). This will create your personal repository, which you will then clone to your computer. Clone the repository in RStudio [following these steps](https://eco280smith.netlify.app/materials/faq/#how-do-i-create-an-r-project-from-a-github-repo). Once you've completed this step, you will have a folder on your computer called hw2-gitusername that contains four files: .gitignore, hw2-gitusername.Rproj, LICENSE, and README.md.
 
 Using either RStudio or your regular file browser, create a subfolder called `data`. Download the [hw2-metabolic.csv file](https://eco280smith.netlify.app/materials/homework/hw2-metabolic.csv) and save it in your data folder.
 
@@ -43,7 +45,7 @@ This section illustrates how to follow the basic steps above in Stata.
 
 Open your copy of Stata. Within Stata use either the command `cd path/to/your/local/eco280/folder/hw2-gitusername` or the menu option to change your working directory to the `hw2-gitusername` folder you created above. **Do not** include the `cd` command in your final do file. Your path is unique to your computer and will not work on other computers.
 
-*Note:* If you are using Splashtop, you should make a folder on the local machine called `hw2-gitusername` and proceed as if this directory was on your computer as you follow the rest of these directions. Make sure you create a `data` subfolder and put the `metabolic.csv` file in it so that Stata can find the data. When you are done, you will need to copy your code and output files back to your own computer so that you can commit them to git.
+*Note:* If you are using Splashtop, you should make a folder on the local machine called `hw2-gitusername` and proceed as if this directory was on your computer as you follow the rest of these directions. Make sure you create a `data` subfolder and put the `hw2-metabolic.csv` file in it so that Stata can find the data. When you are done, you will need to copy your code and output files back to your own computer so that you can commit them to git.
 
 ### Step 2
 
