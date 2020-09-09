@@ -29,7 +29,7 @@ Searching the literature/Git
 
 #### Wed 9/9
 
-[Slack post with recording link]()
+[Slack post with recording link](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1599677137001000)
 
 **Read** [Almond, D. (2018). Childhood circumstances and adult outcomes: Act II. *Journal of Economic Literature*, 56(4), 1360.](http://sfxhosted.exlibrisgroup.com/smith?sid=google&auinit=D&aulast=Almond&atitle=Childhood%20circumstances%20and%20adult%20outcomes%3A%20Act%20II&title=Journal%20of%20Economic%20Literature&volume=56&issue=4&date=2018&spage=1360&issn=0022-0515)
 
