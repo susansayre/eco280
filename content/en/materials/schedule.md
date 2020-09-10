@@ -45,6 +45,8 @@ Summarizing economic papers, workflow
 
 #### Mon 9/14
 
+[Short video on recommendations for storing and naming files](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9c08ada0-da26-400b-b359-ac320015f583)
+
 **Submit** [HW 1](/materials/homework/hw1-git-basics)
 
 **Activity** Begin work on [HW 2](/materials/homework/hw2-regressions-w-code)
