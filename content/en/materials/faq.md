@@ -9,7 +9,9 @@ weight: 5
 
 ### Where can I find links to recordings and class videos?
 
-Since this website is public, all links to videos are posted in the [#recordings](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H) channel of our Slack workspace. I will try to also link them to the relevant days on the schedule page, but may miss some.
+Since this website is public, all links to Zoom recording videos are posted in the [#recordings](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H) channel of our Slack workspace with access information. I will try to also link to these Slack posts from the relevant days on the schedule page, but may miss some. Please check the Slack channel if you can't find one.
+
+I will also be posted asynchronous video lessons via Panopto, which is connected to Moodle. You can see recent Panopto videos in the Panopto link on our (mostly empty) course Moodle page. I will also post direct links to these videos on Panopto on the schedule page. You can also access [the course Panopto page here](https://smith.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=9d42ac90-ae67-4f09-9b04-ac3001413f80). Once on this page, you should be able to access any of the video tutorials I've posted.
 
 ### Do I need to attend class synchronously?
 
