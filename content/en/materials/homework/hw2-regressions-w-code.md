@@ -52,7 +52,7 @@ Since it is common across both programs, we did step 2 (saving your data) in the
 
 ### Step 3
 
-Create a new do file and save it as `regression-code.do` in your `hw2-gitusername` folder. Begin writing your code in this file. It is common practice to include comments in your do file to separate steps and help other users (or yourself in a few weeks) understand what the different sections do. Although this will be a very short program, we will follow this practice here. Use an `*` at the beginning of a line to denote a comment.
+Stata programs are written in files called "do files" because they end with the extension .do. To create a new one, type `doedit` in the console to open the do file editor. Save the file as `regression-code.do` in your `hw2-gitusername` folder. Begin writing your code in this file. It is common practice to include comments in your do file to separate steps and help other users (or yourself in a few weeks) understand what the different sections do. Although this will be a very short program, we will follow this practice here. Use an `*` at the beginning of a line to denote a comment.
 
 ### Step 4a
 
