@@ -45,11 +45,23 @@ Summarizing economic papers, workflow
 
 #### Mon 9/14
 
-[Short video on recommendations for storing and naming files](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9c08ada0-da26-400b-b359-ac320015f583)
-
 **Submit** [HW 1](/materials/homework/hw1-git-basics)
 
-**Activity** Begin work on [HW 2](/materials/homework/hw2-regressions-w-code)
+**Prepare**
+
+- Watch this short video containing [recommendations for storing and naming files](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9c08ada0-da26-400b-b359-ac320015f583)
+
+- If you're new to R and RStudio: 
+
+    -- Read through the three [BasicsBasics](https://rladiessydney.org/courses/ryouwithme/01-basicbasics-0/) sections from R-Ladies Sydney's [RYouWithMe](https://rladiessydney.org/courses/ryouwithme/)
+
+    -- Read the [first section of the RYouWithMe MarkyMark tutorial on RMarkdown](https://rladiessydney.org/courses/ryouwithme/04-markymark-1/)
+
+- If you're new to Stata:
+
+    -- Read through the [Introduction to Germán Rodríguez's Stata Tutorial](https://data.princeton.edu/stata)
+
+**Activity in class** Begin work on [HW 2](/materials/homework/hw2-regressions-w-code)
         
 #### Wed 9/16
 

@@ -63,16 +63,15 @@ insheet using data/hw2-metabolic.csv
 ```
 
 *Note:* Make sure you use a forward slash not a backslash so your code will run on different platforms. Also note that you are using a *relative* path to you file. If you run this code with your working directory set to anything other than your `hw2-gitusername` folder it won't work. We could replace this with an *absolute* path that would work regardless of your working directory but **only on your computer** and only if you never move or rename your analysis folder. 
+
+Typing in do file has no immediate impact. You've written code that will tell Stata to import the data, but we have to **run** the code for that to happen. Save your current do file. In the console window of Stata, type `do regression-code` and hit enter. The code you wrote should appear in the console window and the `Variables` window on the right should now have the variables from the metabolic data listed. Check with your groupmates to make sure everyone is there before proceeding.
     
 ### Step 4b
 
-Enter another comment to identify a new section: `create scatterplot`. Although R's graphing capabilities are better, the learning curve is steep. Stata can generate many graphs and has a nice menu system to help you learn the code to generate the graphs. We will use this menu system to demonstrate how to use the "point-and-click" features of Stata while still guaranteeing your analysis is reproducible. 
-    
-To do this, we have to start by running the code that imports the data. (In the previous step, we wrote the code but didn't execute it so Stata doesn't know about the data yet.) Save your current do file. In the console window of Stata, type `do regression-code` and hit enter. The code you wrote should appear in the console window and the `Variables` window on the right should now have the variables from the metabolic data listed. Check with your groupmates to make sure everyone is there before proceeding.
+In your do file, enter another comment to identify a new section: `create scatterplot`. Although R's graphing capabilities are better, the learning curve is steep. With practice, Stata can generate very nice graphs (much better than Excel) and has a menu system to help you learn the code to generate the graphs. We will use this menu system to demonstrate how to use the "point-and-click" features of Stata while still guaranteeing your analysis is reproducible. 
+Within the main Stata window, navigate to Graphics -> Twoway graph. Choose Create and select scatterplot. Using the menu options, construct a graph with `rate` on the vertical axis and `mass` on the horizontal axis. Feel free to experiment with the marker and weight options if you want. Click `Accept` to set the options and `Ok` to generate your graph. Notice that two things happen when you do this: a window with the graph pops up **and** the line of code to generate the graph is printed in your console. We're going to make one more change to the graph before we add the code to our do file.
         
-Within the main Stata window, navigate to Graphics -> Twoway graph. Choose Create and select scatterplot. Using the menu options, construct a graph with `rate` on the vertical axis and `mass` on the horizontal axis. Feel free to experiment with the marker and weight options if you want. Click `Accept` to set the options and `Submit` to generate your graph. Notice that two things happen when you do this: a window with the graph pops up **and** the line of code to generate the graph is printed in your console. We're going to make one more change to the graph before we add the code to our do file.
-        
-Close the graph you created. (*Note that this graph is now gone; we didn't save it and we didn't put the code to generate it in our do file, so it is effectively lost. You could look in your command history or scroll up in your output window to find it again, but that isn't a reliable method of matching code with output.) Go back to the Graphics window and recreate the graph with one change. This time, I want you to create a graph of the data for only the observations coded male, add axis labels (Metabolic Rate and Lean Body Mass) and give the graph a title. (Hint: there are menu options in the graph wizard to add all of these elements. Explore until you find them and ask your groupmates for help if you get stuck.) Click submit when you're ready. Once you have a graph you like, copy the code that created it from the console window and paste it into your do file. Make sure you leave off the `.` character at the beginning of the code and the `>` character that shows up if you code covers two lines in the console.
+Close the graph you created. Go back to the Graphics window, select Plot 1 and choose edit. Although we closed the graph, Stata stored the code for us and we now want to change it. This time, I want you to create a graph of the data for only the observations coded male (sex == 0), add axis labels (Metabolic Rate and Lean Body Mass) and give the graph a title. (Hint: there are menu options in the graph wizard to add all of these elements. Explore until you find them and ask your groupmates for help if you get stuck.) Click submit when you're ready. Once you have a graph you like, copy the code that created it from the history window and paste it into your do file.
 
 *Tip:* If your line of code gets too long to see easily in your do file, you can create a multiline command by entering `///` at the end of the line and continuing your command on the next line.
 
@@ -135,7 +134,10 @@ Using either GitHub desktop or the Git tab in RStudio, stage, commit, and push a
 
 *Note:* If you did the Stata part of this lab using Splashtop, you cannot use git directly. Instead, you'll need to copy all the files listed above from the Splashtop computer back to your own computer that you're using for the R part of the analysis. Once they are on your computer, you can stage, commit, and add them to git.
 
+When you are done, close Stata. It will tell you the data in memory has changed and ask you if you want to save. Say no and Stata will close. (*Note:* Since our goal is reproducibility, we will never be saving data on exit. If we want to save a data set we've modified, we'll use code to save it so we know *exactly* what is being saved.)
+
 ## Running a regression in R
+
 
 ### Step 1
 
@@ -149,23 +151,31 @@ Since it is common across both programs, we did step 2 (saving your data) in the
 
 Choose File -> New file -> RMarkdown and set the title to `Regressions in R (HW 2)`. Make sure you are listed as the author and select HTML output. Save the resulting file as `regression.Rmd`. In the r setup chunk, add add lines loading the package we're going to use for this lab: `library(tidyverse)`.
 
+*Note:* If you haven't already done this, you need to install the tidyverse package on your computer. To do this, type `install.packages("tidyverse")` in the R console window.
+
+Delete everything in the Rmd file from ## R Markdown to the end of the file. Save your file.
+
 ### Step 4
 
-In R, both the code and the output will be part of the same file. We will work through building the file, running the code iteratively to make sure it's working and then "knit" the file at the end to create a document that contains both code and output.
+In R, both the code and the output will be part of the same file. We will work through building the file, running the code iteratively to make sure it's working and then "knit" the file at the end to create a document that contains both code and output. RMarkdown documents are a mix of text sections and code sections. The text sections have a weight background and the code sections have a shaded background. 
 
 ### Step 4a
 
-Insert a code chunk and call it `import data`. (*Sidenote:* I recommend naming all code chunks -- as well as comment identified sections in Stata -- with __verbs__ that describe what the sections do.) Within the chunk, using the read_csv function to import the data and store it as an object in R:  Click the green triangle on the chunk to run the code. It should run your setup block and then import the data. If you click on the Environment tab in the upper right in RStudio, you'll see the metabolic object listed. You can click it on it to see the data.
+Insert a code chunk by going to Code -> Insert Chunk. Name the chunk by typing the phrase `import data` after the `r` *inside* the brackets on the top line. (*Sidenote:* I recommend naming all code chunks -- as well as comment identified sections in Stata -- with __verbs__ that describe what the sections do.) 
+
+Within the chunk, use the read_csv function to import the data and store it as an object in R by typing: 
 
 ```
 metabolic <- read_csv("data/hw2-metabolic.csv")
-```
+``` 
+
+Click the green triangle on the chunk to run the code. It should run your setup block and then import the data. If you click on the Environment tab in the upper right in RStudio, you'll see the metabolic object listed. You can click it on the triangle to get information about the included variable or click on the name to open a window to see the data.
     
 ### Step 4b
 
 Insert a new code chunk and call it `graph data`. To keep things consistent across the course, we're going to generate our graph using ggplot. The semantics are very powerful but less user-friendly than Stata's graphing options. For now, I'm going to give you the basic commands, but we'll go into more detail later. To generate our basic plot, use the command
 
-```{r basic plot, eval = F}
+```{r basic plot}
 ggplot(metabolic, aes(x = mass, y = rate)) + geom_point()
 ```
 
@@ -176,6 +186,8 @@ We want to separate our data into two separate plots for the male and female obs
 ```
 ggplot(filter(metabolic, sex == 0), aes(x = mass, y = rate)) + geom_point()
 ```
+
+Comparing this to the previous command, we replaced the name of the object containing our data (`metabolic`) with a function `filter(metabolic, sex == 0)` that takes the dataset and pulls out only the observations where the value of the sex variable is 0. 
 
 We also want to add a title (so we know that this is only the male observations) and axis labels. To do this, we modify our code to say 
 
