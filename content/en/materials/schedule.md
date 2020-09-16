@@ -69,6 +69,8 @@ Summarizing economic papers, workflow
 
 **Activity** Reading skills: abstract, introduction, and conclusion; focused reading of data and methods
 
+- [Document with guidelines](/docs/AIC-method.md)
+
 **Start** Constructing a summary of your chosen article (due Wed 9/23)
 
 ### Week 4 (9/21 - 9/25)
