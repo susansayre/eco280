@@ -2,8 +2,9 @@
 title: "Abstract, Introduction, Conclusion"
 author: "Susan Sayre"
 date: "9/16/2020"
-output: md_document
-
+output: 
+  md_document:
+    preserve_yaml: true
 ---
 
 This template is designed to help you extract basic information about an article without reading the (often dense) middle sections of the paper. It concludes with suggestions on how you might dive into the detailed sections if you need to.
