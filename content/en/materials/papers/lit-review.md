@@ -90,7 +90,7 @@ While you should include mostly published, peer-reviewed journal article, econom
 
 **Submit** to your GitHub repo by Wed 9/23
 
-Using RMarkdown, write 200-300 page summary of one of the articles you located in your literature search. Note that this summary will be more detailed than the discussion you will include in your literature review for most of the papers you discuss. Writing the summary is designed to give you practice in digesting economic journal articles, which are often quite dense.
+Using RMarkdown (or a text document), write 200-300 page summary of one of the articles you located in your literature search. Note that this summary will be more detailed than the discussion you will include in your literature review for most of the papers you discuss. Writing the summary is designed to give you practice in digesting economic journal articles, which are often quite dense.
 
 Begin by screening the articles you have located by reading the abstract and potentially skimming the introduction. As you read, decide how interesting and relevant you think the article will be for understanding your topic of interest. Pick an empirical article (one that uses statistical analysis to answer a research question) that sounds especially interesting to you.
 
