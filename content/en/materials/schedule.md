@@ -67,9 +67,7 @@ Summarizing economic papers, workflow
 
 **Submit** an RMarkdown document to your lit-review repo describing your search of the literature on a topic of your choosing. You should describe the process you followed and include a list of at least five papers. The papers should represent different phases of your literature search (that is, you should not simply report the first five papers that come up when you enter a search term). For each paper, include a complete citation in APA format and a brief assessment of the journal (or other location) in which the paper appears. You do *not* need to summarize the papers themselves.
 
-**Activity** Reading skills: abstract, introduction, and conclusion; focused reading of data and methods
-
-- [Document with guidelines](/docs/AIC-method.html)
+**Activity** [Reading skills: abstract, introduction, and conclusion](https://eco280smith.netlify.app/materials/activities/aic-method); focused reading of data and methods
 
 **Start** Constructing a summary of your chosen article (due Wed 9/23)
 
@@ -84,7 +82,8 @@ Classifying the literature
 
 #### Wed 9/23
 
-**Submit** paper summary
+**Submit** a summary of one of your articles, following the directions in the [lit review assignment here](/materials/papers/lit-review/#single-article-summary)
+
 **Activity** classifying the literature
 
 ### Week 5 (9/28 - 10/2)

@@ -90,11 +90,13 @@ While you should include mostly published, peer-reviewed journal article, econom
 
 **Submit** to your GitHub repo by Wed 9/23
 
-Using RMarkdown, write a 1-2 page summary of one of the articles you located in your literature search. Note that this summary will be more detailed than the discussion you will include in your literature review for most of the papers you discuss. Writing the summary is designed to give you practice in digesting economic journal articles, which are often quite dense.
+Using RMarkdown, write 200-300 page summary of one of the articles you located in your literature search. Note that this summary will be more detailed than the discussion you will include in your literature review for most of the papers you discuss. Writing the summary is designed to give you practice in digesting economic journal articles, which are often quite dense.
 
 Begin by screening the articles you have located by reading the abstract and potentially skimming the introduction. As you read, decide how interesting and relevant you think the article will be for understanding your topic of interest. Pick an empirical article (one that uses statistical analysis to answer a research question) that sounds especially interesting to you.
 
-Work through the steps
+Work through the steps in the [Abstract, Introduction, Conclusion (AIC)](https://eco280smith.netlify.app/materials/activities/aic-method) activity to help you determine what the article is about and what the authors found. You do **not** need to answer all of the questions in your single article summary, but thinking through them will help you write a good summary.
+
+Once you've done this, you should write a 200-300 word summary of the article (more than this is ok, but probably not necessary). In the summary, you should primarily be focused on answering the questions in [Step 7](https://eco280smith.netlify.app/materials/activities/aic-method/#step-7-summarize-your-findings) of the AIC activity. 
 
 ### Mini-presentation
 
