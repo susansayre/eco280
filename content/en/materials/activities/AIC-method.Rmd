@@ -9,7 +9,7 @@ output:
 
 This template is designed to help you extract basic information about an article without reading the (often dense) middle sections of the paper. It concludes with suggestions on how you might dive into the detailed sections if you need to.
 
-# Step 1: Read the abstract and answer the following questions:
+## Step 1: Read the abstract and answer the following questions:
 
 - What question does the paper address?
 - What methodology/data does the paper use?
@@ -18,7 +18,7 @@ This template is designed to help you extract basic information about an article
 -	(Is this paper relevant to me/this project?)
 -	List/circle any unfamiliar terms whose meanings seem important to understanding the article.
 
-# Step 2: Read/skim the introduction
+## Step 2: Read/skim the introduction
 
 - Revisit the earlier questions. Do you have any additions/changes to your answers based on the introduction?
 - What has previous literature on related questions found?
@@ -29,7 +29,7 @@ This template is designed to help you extract basic information about an article
 
 At this point, consider google searches or asking me if there are terms you want to understand before proceeding.
 
-# Step 3: Skip the middle of the paper and read the conclusion
+## Step 3: Skip the middle of the paper and read the conclusion
 
 Note that the conclusion is very short in many economic papers.
 
@@ -39,11 +39,11 @@ Note that the conclusion is very short in many economic papers.
 -	What will be most critical for you to read/understand/assess to decide whether you agree with the paper’s conclusions?
 -	List/circle any unfamiliar terms whose meanings seem important to understanding the article.
 
-# Step 4: Assess and possibly continue
+## Step 4: Assess and possibly continue
 
 For many of the papers you will discuss in your literature review, you can stop here (or even earlier). As a general rule, it's worth stopping after each section and considering whether it's worth continuing. If I'm really interested in a paper, at this point, I usually proceed with the remaining steps.
 
-# Step 5: Flip through (but don't read yet) the remaining sections. 
+## Step 5: Flip through (but don't read yet) the remaining sections. 
 
 For each section, answer the following questions:
 
@@ -51,12 +51,12 @@ For each section, answer the following questions:
 -	How specialized does the terminology, methodology seem?
 -	If you needed to rely on the paper, would you plan to read in detail, skim, or skip this section? Why?
 
-# Step 6: Read/skim/skip sections according to your plan:
+## Step 6: Read/skim/skip sections according to your plan:
 
 -	Do you find the paper credible? Why or why not?
 -	What critiques do you have of the paper, the methodology, the conclusion, etc?
 
-# Step 7: Summarize your findings
+## Step 7: Summarize your findings
 
 -	What are the paper’s main findings?
 

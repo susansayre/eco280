@@ -13,7 +13,7 @@ It concludes with suggestions on how you might dive into the detailed
 sections if you need to.
 
 Step 1: Read the abstract and answer the following questions:
-=============================================================
+-------------------------------------------------------------
 
 -   What question does the paper address?
 -   What methodology/data does the paper use?
@@ -24,7 +24,7 @@ Step 1: Read the abstract and answer the following questions:
     understanding the article.
 
 Step 2: Read/skim the introduction
-==================================
+----------------------------------
 
 -   Revisit the earlier questions. Do you have any additions/changes to
     your answers based on the introduction?
@@ -44,7 +44,7 @@ At this point, consider google searches or asking me if there are terms
 you want to understand before proceeding.
 
 Step 3: Skip the middle of the paper and read the conclusion
-============================================================
+------------------------------------------------------------
 
 Note that the conclusion is very short in many economic papers.
 
@@ -58,7 +58,7 @@ Note that the conclusion is very short in many economic papers.
     understanding the article.
 
 Step 4: Assess and possibly continue
-====================================
+------------------------------------
 
 For many of the papers you will discuss in your literature review, you
 can stop here (or even earlier). As a general rule, it’s worth stopping
@@ -67,7 +67,7 @@ really interested in a paper, at this point, I usually proceed with the
 remaining steps.
 
 Step 5: Flip through (but don’t read yet) the remaining sections.
-=================================================================
+-----------------------------------------------------------------
 
 For each section, answer the following questions:
 
@@ -77,14 +77,14 @@ For each section, answer the following questions:
     detail, skim, or skip this section? Why?
 
 Step 6: Read/skim/skip sections according to your plan:
-=======================================================
+-------------------------------------------------------
 
 -   Do you find the paper credible? Why or why not?
 -   What critiques do you have of the paper, the methodology, the
     conclusion, etc?
 
 Step 7: Summarize your findings
-===============================
+-------------------------------
 
 -   What are the paper’s main findings?
 
