@@ -76,9 +76,12 @@ Summarizing economic papers, workflow
 Classifying the literature
 
 #### Mon 9/21
+
 **Submit** [HW 2](/materials/homework/hw2-regressions-w-code)
 
-**Activity** begin work on HW 3
+**Watch** A [15 minute git tutorial](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30cdbf3c-1fbf-4492-b732-ac3a0103d787) I made explaining how RStudio, the Git terminal, and GitHub desktop interact with your local git repo and with GitHub.com. Please watch unless you are a relatively experienced git user.
+
+**Activity in class** begin work on HW 3
 
 #### Wed 9/23
 

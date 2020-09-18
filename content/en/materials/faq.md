@@ -34,9 +34,17 @@ In the upper right of the Google Scholar page, click on `Sign In`. Depending on 
 
 Once you're signed in, click on the three bars on the left to get the menu and select `Settings`. On the settings page, choose `Library links` and search for Smith College. Check the box next to Smith College Libraries and select `Save`.
 
-## Git via RStudio
+## R/RStudio
 
-### How do I create an R project from a GitHub repo?
+### Can I use the RStudio Server for my projects?
+
+Yes. You can go to the [Smith RStudio server](https://rstudio.smith.edu/auth-sign-in) and sign in to complete your RStudio tasks. Git is already installed so you can check out directly from GitHib. You will probably have to type your GitHub username and password each time.
+
+Many of our assignments ask you to work with R and Stata on the same repo. You cannot use Stata on the server, but since you are syncing your work via GitHub this should not be a problem. It is good practice to make sure you commit **and push** your work to GitHub every time you get ready to sign of the RStudio server. It is fine to push work to GitHub that is not fully finished because you can continue to work on it later.
+
+## Working with Git
+
+### How do I create an R project from a GitHub repo using RStudio?
 
 These steps will work to create an R project from any GitHub repo. In this class, you'll usually be accepting an assignment from GitHub classroom to make the repo.
 
@@ -47,7 +55,20 @@ These steps will work to create an R project from any GitHub repo. In this class
 
 Following these steps will guarantee that I can access your repository and see anything that you push to GitHub.
 
-### Why is the Git tab missing?
+### How do I create an R project from a GitHub repo using GitHub desktop?
+
+These steps assume you have an existing repo on GitHub, which could be either one you created there and one that was created when you accepted an assignment on GitHub classroom.
+
+1. Copy the link to the GitHub repo.
+2. Open GitHub desktop and click the triangle next to current repository in the upper left.
+3. Choose add. You can either find the repository by beginning to type its name or click on the URL tab and paste the URL into the box.
+4. You now have a version of the repo on you local computer but RStudio doesn't know about it yet and we haven't created an .Rproj file. To do this, open RStudio and select `File -> New Project -> Existing Directory` and browse to select the directory that contains your repo *inside* your class folder. 
+
+    **Note the difference** between this and what you do when create the project directly from GitHub. When creating directly from GitHub, you pick the folder you want your **project folder to be in** because RStudio will create a new folder. When doing it this way, you pick the folder that contains the project files.
+
+5. Commit and push the .Rproj file that is created when you do this step. You can commit and push in either RStudio or GitHub Desktop. (You can also commit in one program and push in the other.)
+
+### Why is the Git tab missing in RStudio?
 
 If you are working in RStudio and discover that the Git tab is missing when you want to commit your work, it is likely that you opened an .R or .Rmd file instead of your .Rproj file. RStudio uses .Rproj files to track *project* level information, like whether the project is tied to a git repo. If this happens, save all your open files, go to `File -> Open Project` and navigate to your project's .Rproj file. When it opens, the git tab should be restored.
 
