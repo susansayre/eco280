@@ -68,6 +68,15 @@ These steps assume you have an existing repo on GitHub, which could be either on
 
 5. Commit and push the .Rproj file that is created when you do this step. You can commit and push in either RStudio or GitHub Desktop. (You can also commit in one program and push in the other.)
 
+### How do I pull changes from GitHub.com?
+
+There are a number of ways to do this. The first step in all cases is to **commit** any local changes that you want to keep. You cannot run git pull if you have local changes to tracked files. Do **not** push the changes yet. (You'll get an error if you try.) To actually pull the changes, pick **one** of the following methods:
+
+- In RStudio, click on the down arrow in the Git tab
+- In RStudio, Select `Pull Branches` from the Git dropdown menu
+- In GitHub Desktop, press the button that says `Pull Origin`. If it's not there, try clicking on `Fetch Origin` in the upper right. That will check whether there are changes on GitHub that you can pull and should then give you the `Pull Origin` option.
+- Typing `git pull` in a Terminal or Git Bash window whose working directory is the local git repo.
+
 ### Why is the Git tab missing in RStudio?
 
 If you are working in RStudio and discover that the Git tab is missing when you want to commit your work, it is likely that you opened an .R or .Rmd file instead of your .Rproj file. RStudio uses .Rproj files to track *project* level information, like whether the project is tied to a git repo. If this happens, save all your open files, go to `File -> Open Project` and navigate to your project's .Rproj file. When it opens, the git tab should be restored.
