@@ -58,7 +58,7 @@ At this point, everyone on the team should have their own local copy of the repo
 
 #### Step 2: Make individual changes and share them over GitHub.com
 
-Switch who is sharing the screen again. In RStudio, **one** member of your team should select `File -> New File -> Markdown`. On the first line type
+Switch who is sharing the screen again. In RStudio, **one** member of your team should select `File -> New File -> Markdown`. (Note that we want a Markdown file not an RMarkdown file. The Markdown option is further down in the menu.) On the first line type
 
 ```
 HW 3 for team-name: Your name
