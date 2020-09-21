@@ -219,7 +219,7 @@ You'll need to substitute the appropriate variable names and the specific numeri
 
 I want to highlight one important distinction in the above line. The line creates an **object** whose name is `real_prices`. This object is a special type of object called a dataframe that has rows (observations) and columns (variables). One of the variables is called something like `real_price` but this is not an object. This distinction between **objects** and **variables** is important in R and doesn't really come up in Stata because Stata basically only has one object in memory at a time (the one dataset it's currently using).
 
-#### RMarkdown with pipe
+#### Step 4: RMarkdown with pipe
 
 The syntax above is correct and helps us understand what R actually does but it's annoying to write and forces us to come up with lots of object names or to repeatedly overwrite a single object, neither of which is ideal. To help prevent this problem, one of the packages contained in the tidyverse (`magrittir`) introduces something called the **pipe** operator. This operator `%>%` essentially tells R to take the output object from what's on the left and use it as the first argument in the function on the right. 
 
@@ -255,7 +255,7 @@ In my head, I read this as *generate the object `final_object` using the followi
 
 Either before or after your code chunk, write a short text description describing what year you used to measure real prices.
 
-#### Generate graph in R
+#### Step 5: Generate graph in R
 
 Our last step is to generate the graph in R. Enter a new chunk and give it a descriptive name that starts with a verb. 
 We'll use ggplot (which is part of the tidyverse) to generate our plots. The ggplot approach to graphing is to build up graphs in layers.
