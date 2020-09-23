@@ -82,3 +82,34 @@ There are a number of ways to do this. The first step in all cases is to **commi
 If you are working in RStudio and discover that the Git tab is missing when you want to commit your work, it is likely that you opened an .R or .Rmd file instead of your .Rproj file. RStudio uses .Rproj files to track *project* level information, like whether the project is tied to a git repo. If this happens, save all your open files, go to `File -> Open Project` and navigate to your project's .Rproj file. When it opens, the git tab should be restored.
 
 If you're using a Mac computer, it's also possible that there is an issue with Xcode and that you need to [follow these steps from Jenny Bryan](https://happygitwithr.com/troubleshooting.html#rstudio-git-pane-disappears-on-mac-os) to fix it.
+
+### Using ggplot
+
+#### Why do some examples put the aes(x = x_var, y = y_var) inside the ggplot() function and others put it inside the geom_xxxx() function?
+
+For most plots you'll make, either approach works. The code `ggplot(my_data, aes(x = x_var, y = y_var))` sets the default x and y variables for any layer that you add to the plot, while the code `geom_point(aes(x = x_var, y = y_var))` sets the x and y variables for *only that layer*. For a simple plot
+
+```
+ggplot(my_data, aes(x = x_var, y = y_var)) + geom_point()
+```
+and
+```
+ggplot(my_data) + geom_point(aes(x = x_var, y = y_var))
+```
+will produce exactly the same thing.
+
+If I want to plot the same two variables using several geom_xxxx layers, the first format might be easier since I could set the variables once using this code:
+
+```
+ggplot(my_data, aes(x = x_var, y = y_var)) + geom_point() + geom_smooth(method = "lm")
+```
+instead of specifying them in each layer, like this:
+```
+ggplot(my_data) + geom_point(aes(x = x_var, y = y_var)) + geom_smooth(aes(x = x_var, y = y_var), method = "lm")
+```
+
+In contrast, if I wanted to plot two different y variables against the same x variable, I'd probably do this:
+```
+ggplot(my_data, aes(x = x_var)) + geom_line(aes(y = y_var1)) + geom_line(aes(y = y_var2))
+```
+Having multiple options for how you specify the plot makes the code more complicated when you first learn it, but the flexibility offers more options to construct exactly the graph you want.
