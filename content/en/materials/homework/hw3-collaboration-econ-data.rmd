@@ -280,3 +280,9 @@ ggplot(my_data, aes(x = date, y = real_price_var)) +
 ```
 
 When you're done, save your .Rmd file, knit it, and stage, commit, and push both the .Rmd file **and the knitted html file**.
+
+If you're new to R, there are several excellent resources for learning the syntax of ggplot. Because it's different than other programs, it may take a while to get used to the construction of graphs. 
+
+- [Chapter 3](https://r4ds.had.co.nz/data-visualisation.html) of Hadley Wickham's e-book [R for Data Science](https://r4ds.had.co.nz/) is a great introduction to ggplot (and the rest of the book is a very useful resource for R/RStudio and the tidyverse packages).
+
+
