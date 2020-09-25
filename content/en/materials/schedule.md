@@ -92,8 +92,9 @@ Classifying the literature
 ### Week 5 (9/28 - 10/2)
 
 #### Mon 9/28
+
 **Submit** HW 3
-**Activity** Organizing/classifying papers from a literature search
+**Activity** Using a [template to organize and classify papers](/materials/activities/Organizing) from your literature search
 
 #### Wed 9/30
 
