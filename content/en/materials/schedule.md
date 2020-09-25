@@ -91,8 +91,6 @@ Classifying the literature
 
 ### Week 5 (9/28 - 10/2)
 
-[Literature review](/materials/papers/lit-review) due next Wed 10/7
-
 #### Mon 9/28
 **Submit** HW 3
 **Activity** Organizing/classifying papers from a literature search
@@ -112,6 +110,8 @@ We will discuss five core data wrangling tasks:
 I will briefly describe how to accomplish each task in R and in Stata and will introduce HW 4, which will give you practice doing these tasks.
 
 ### Week 6 (10/5 - 10/9) 
+
+[Literature review](/materials/papers/lit-review) due next Wed 10/14
 
 #### Mon 10/5
 
