@@ -18,13 +18,13 @@ weight: 1
 
 ## Submission details
 
-You will submit this assignment by pushing a PDF of your literature review to your lit-review-gitusername repo by 10:30am EST on Wed Oct 7. Although not strictly required, it is highly recommended that you also push the sourcefile (e.g. a .docx or .Rmd file) unless you wrote your lit review in Google Docs.
+You will submit this assignment by pushing a PDF of your literature review to your lit-review-gitusername repo by 10:45am EST on Wed Oct 14. Although not strictly required, it is highly recommended that you also push the sourcefile (e.g. a .docx or .Rmd file) unless you wrote your lit review in Google Docs.
 
 There are several intermediate deadlines associated with this paper including:
 
 - Wed Sep 16: Literature search description
 - Wed Sep 23: Single article summary
-- Mon Sep 28: Mini-presentation of thematic grouping of your articles
+- Mon Oct 5 or Wed Oct 7: Mini-presentation of thematic grouping of your articles
 
 While the other elements should be written independently, you are welcome to work in groups of up to 3 students on the literature search if there are other students interested in similar topics. As you search the literature the first time, it can be quite helpful to have collaborators to check in with. If you work in a group, each group member should write a summary of a different article and develop their own grouping of the literature.
 
@@ -100,7 +100,7 @@ Once you've done this, you should write a 200-300 word summary of the article (m
 
 ### Mini-presentation
 
-Live in class on 9/28 or 9/30 **or** recorded and shared with the class before class on 9/30
+Live in class on 10/5 or 10/7 **or** recorded and shared with the class before class on 10/5
 
 You will make a brief presentation either live in class or recorded asynchronously and shared with class. In this presentation, you will use a couple slides to describe what you've discovered about the economic literature on your topic. Presentations/videos should be 3-5 minutes long. 
 

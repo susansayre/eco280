@@ -87,26 +87,47 @@ Classifying the literature
 
 **Submit** a summary of one of your articles, following the directions in the [lit review assignment here](/materials/papers/lit-review/#single-article-summary)
 
-**Activity** classifying the literature
+**MOUNTAIN DAY!**
 
 ### Week 5 (9/28 - 10/2)
 
-Literature presentations, live or asynchronous
 [Literature review](/materials/papers/lit-review) due next Wed 10/7
 
 #### Mon 9/28
 **Submit** HW 3
+**Activity** Organizing/classifying papers from a literature search
+
+#### Wed 9/30
+
+**Topic:** Data wrangling tasks 
+
+We will discuss five core data wrangling tasks: 
+
+- selecting/dropping/renaming variables
+- sorting data
+- subsetting data
+- creating new variables
+- computing summary statistics (overall or by group)
+
+I will briefly describe how to accomplish each task in R and in Stata and will introduce HW 4, which will give you practice doing these tasks.
+
+### Week 6 (10/5 - 10/9) 
+
+#### Mon 10/5
+
+Literature Presentations I
+HW 4 work/help session
+
+#### Wed 10/7
+
+Literature Presentations II
+HW 4 work/help session
+
+**HW 4 due Thurs 10/8 at 9am EST**
 
 ## Section 2: Reproducible research
 
 In this part of the course, we focus on developing good practices for reproducible research. You work will consist of a mix of homework exercises and interim progress checkpoints on your group project to reproduce the analysis in an existing economic journal article. I will provide a list of suggested articles to reproduce.
-
-### Week 6 (10/5 - 10/9) 
-Locating, storing, importing, and working with data
-
-#### Wed 10/7
-
-**Submit** [literature review](/materials/papers/lit-review)
 
 ### Week 7 (10/12 - 10/16)
 
@@ -114,6 +135,7 @@ Locating, storing, importing, and working with data
 Fall Break
 
 #### Wed 10/14
+**Submit** [literature review](/materials/papers/lit-review)
 
 Data wrangling I
 
