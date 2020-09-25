@@ -132,43 +132,93 @@ In this part of the course, we focus on developing good practices for reproducib
 ### Week 7 (10/12 - 10/16)
 
 #### Mon 10/12
+
 Fall Break
 
 #### Wed 10/14
-**Submit** [literature review](/materials/papers/lit-review)
 
-Data wrangling I
+**Submit** [literature review](/materials/papers/lit-review)
+- Overview of replication paper assignment
+- Live coding: strings and dates tasks
+- Description of HW 5: Strings and dates
 
 ### Week 8 (10/19 - 10/23)
 
-Data wrangling II
+#### Mon 10/19
+
+- Questions/discussion of finding papers to replicate
+- HW 5 work/help session
+
+#### Wed 10/21
+
+**Submit** HW 5 by 10:45am EST
+- Why merging and reshaping?
+- Live coding: examples of reshaping and merging in R and Stata
+- Description of HW 6: merging and reshaping
 
 ### Week 9 (10/26 - 10/30)
 
-Working with dates and strings
+#### Mon 10/26
+
+**Submit** Paper choice w/ brief summary to group replication repo
+- Reinhardt and Rogoff example: why reproducibility matters
+- HW 6 work/help session
+
+#### Wed 10/28
+
+**Submit** HW 6
+- Replication example/discussion
+- Live coding: examples of generating/using summary statistics and running/reporting regressions in R and Stata
+- Description of HW 7: Summary stats and regressions
 
 ### Week 10 (11/2 - 11/6)
 
-Advanced regressions and tables with code
+#### Mon 11/2
+
+- **Submit** data and import code to group replication repo
+- HW 7 work/help session
+
+#### Wed 11/4
+
+- **Submit** HW 7
+- Discussion of project process, questions, and troubleshooting
+- Introduction to advanced regression and tables
+- Description of HW 8: Advanced regression and tables
+
+### Week 11 (11/9 - 11/13)
+
+#### Mon 11/9
+HW 8 and/or project work/help
+
+#### Wed 11/11
+
+**Submit** HW 8
+Project work/help session
 
 ## Section 3: Understanding your data
 
 In this part of the course, we will focus on data exploration. The course will focus on data tasks you are familiar with from other courses but will emphasize using these summary measures to understand what's happening in your data. During this phase of the course, you will have several relatively short homework exercises, but will spend most of your time working on understanding a dataset of your own choosing. 
 
-### Week 11 (11/9 - 11/13)
-
-Using summary statistics to understand and clean your data
-
 ### Week 12 (11/16 - 11/19)
 
-Graphics
-
 #### Mon 11/16
+
 **Submit** [Paper replication](/materials/papers/replication)
+- Discussion of final project
+- Live coding examples: programmatic data downloads and APIs
+- Description of HW 9: Data and APIs
+
+#### Wed 11/18
+
+HW 9 work/help session
 
 ### Week 13 (11/23 - 11/27)
 
-Programmatic data downloads
+#### Mon 11/23
+
+**Submit** HW 9
+- Live coding examples: graphs in R
+- Description of HW 10: Using ggplot
 
 #### Wed 11/24
 
@@ -176,11 +226,27 @@ Programmatic data downloads
     
 ### Week 14 (11/30 - 12/4)
 
-Maps
+#### Mon 11/30
+
+**Submit** dataset for final project via final project repo
+HW 10 work/help session
+
+#### Wed 12/2
+
+**Submit** HW 10
+- Live coding examples: mapping in R using `sf` and `tmap`
+- Description of HW 11: Mapping in R
 
 ### Week 15 (12/7 - 12/11)
 
-TBD/Project work
+#### Mon 12/7
+HW 11 work/help session
+
+#### Wed 12/9
+
+*Mountain Day Make-up*
+**Submit** HW 11
+Final project work/help session
 
 ### Finals (12/14 - 12/17)
 
