@@ -3,6 +3,7 @@ date: "2020-01-28T00:36:14+09:00"
 description: Paper Replication
 draft: false
 title: Paper Replication
+weight: 2
 ---
 
 Working in a group or alone, you will develop a fully documented and reproducible replication of an existing table of summary statistics, graph (if applicable), and regression results from a published economics paper.
