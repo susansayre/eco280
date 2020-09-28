@@ -95,6 +95,7 @@ Classifying the literature
 
 **Submit** HW 3
 **Activity** Using a [template to organize and classify papers](/materials/activities/Organizing) from your literature search
+[Slack post with recording link](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1601316571000600)
 
 #### Wed 9/30
 
