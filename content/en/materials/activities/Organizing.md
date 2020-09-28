@@ -7,8 +7,7 @@ output:
     preserve_yaml: true
 ---
 
-Make a copy of the [paper organization template](https://docs.google.com/spreadsheets/d/1snGY44o8JOzTPyKSl4siJj2j_s04Mob3kJXwsN0_plA/copy?usp=sharing) 
-demonstrated in class to use for your own organization. The columns in
+Make a copy of the [paper organization template](https://docs.google.com/spreadsheets/d/1snGY44o8JOzTPyKSl4siJj2j_s04Mob3kJXwsN0_plA/copy?usp=sharing) demonstrated in class to use for your own organization. The columns in
 the spreadsheet suggest useful information you may want to record about
 the different studies you’re looking at, but no generic categories will
 work for all literature reviews. I encourage you to modify, add, or
