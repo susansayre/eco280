@@ -1,6 +1,13 @@
 ---
 date: "2020-01-28T00:36:14+09:00"
 title: HW 3 - Collaboration and data basics
+series:
+- Themes Guide
+tags:
+- markdown
+- css
+- html
+- themes
 output: 
   md_document:
     preserve_yaml: true
