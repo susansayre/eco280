@@ -4,6 +4,7 @@ title: HW 3 - Collaboration and data basics
 output: 
   md_document:
     preserve_yaml: true
+    pandoc_args: ["--wrap=preserve"]
 ---
 
 ## Submission details
