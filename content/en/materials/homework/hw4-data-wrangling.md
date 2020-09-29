@@ -21,11 +21,11 @@ This homework is designed to give you practice working with five basic data wran
 
 | Data task                   | dplyr commands           | Stata commands           |
 |-----------------------------|--------------------------|--------------------------|
-| choosing/renaming variables | select, rename, relocate | keep, drop, rename, order|
-| sorting data                | arrange                  | sort                     |
-| subsetting data             | filter                   | keep if, drop if         |
-| creating/modifying variables| mutate                   | gen, replace, egen       |
-| computing summary statistics| summarize                | summary, collapse        |
+| choosing/renaming variables | select, rename, relocate | keep, drop, rename, order| 
+| sorting data                | arrange                  | sort                     | 
+| subsetting data             | filter                   | keep if, drop if         | 
+| creating/modifying variables| mutate                   | gen, replace, egen       | 
+| computing summary statistics| summarize                | summary, collapse        | 
 
 Unlike our previous homework assignments, for this homework assignment, I will provide an example of what I want the output to look like and will provide some suggestions on how to construct the code to accomplish this, but will not provide the specific code. Your job is to use the examples I demonstrated in class and those from the documentation provided to generate code that accomplishes its goal.
 
