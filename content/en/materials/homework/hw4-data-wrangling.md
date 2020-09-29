@@ -19,47 +19,13 @@ Learning objectives
 
 This homework is designed to give you practice working with five basic data wrangling tasks. There are many tutorials online describing the “five main verbs” of `dplyr` (which is part of the `tidyverse`) that show how to accomplish these tasks in R using dplyr/tidyverse. This homework asks you to complete the tasks in both R and Stata. The five basic operations and associated commands are:
 
-<table style="width:100%;">
-<colgroup>
-<col style="width: 35%" />
-<col style="width: 32%" />
-<col style="width: 32%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Data task</th>
-<th style="text-align: left;">dplyr commands</th>
-<th style="text-align: left;">Stata commands</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">choosing/renaming variables</td>
-<td style="text-align: left;">select, rename, relocate</td>
-<td style="text-align: left;">keep, drop, rename, order</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">sorting data</td>
-<td style="text-align: left;">arrange</td>
-<td style="text-align: left;">sort</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">subsetting data</td>
-<td style="text-align: left;">filter</td>
-<td style="text-align: left;">keep if, drop if</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">creating/modifying variables</td>
-<td style="text-align: left;">mutate</td>
-<td style="text-align: left;">gen, replace, egen</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">computing summary statistics</td>
-<td style="text-align: left;">summarize</td>
-<td style="text-align: left;">summary, collapse</td>
-</tr>
-</tbody>
-</table>
+| Data task                   | dplyr commands           | Stata commands           |
+|-----------------------------|--------------------------|--------------------------|
+| choosing/renaming variables | select, rename, relocate | keep, drop, rename, order|
+| sorting data                | arrange                  | sort                     |
+| subsetting data             | filter                   | keep if, drop if         |
+| creating/modifying variables| mutate                   | gen, replace, egen       |
+| computing summary statistics| summarize                | summary, collapse        |
 
 Unlike our previous homework assignments, for this homework assignment, I will provide an example of what I want the output to look like and will provide some suggestions on how to construct the code to accomplish this, but will not provide the specific code. Your job is to use the examples I demonstrated in class and those from the documentation provided to generate code that accomplishes its goal.
 
