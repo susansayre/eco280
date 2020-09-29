@@ -105,3 +105,5 @@ Live in class on 10/5 or 10/7 **or** recorded and shared with the class before c
 You will make a brief presentation either live in class or recorded asynchronously and shared with class. In this presentation, you will use a couple slides to describe what you've discovered about the economic literature on your topic. Presentations/videos should be 3-5 minutes long. 
 
 A key element of the presentation is identifying one or more ways to group the articles thematically. As discussed above, thematic groupings can be organized in a number of different ways including: by method, by finding, or by sub-topic.
+
+[An example video](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=41433217-e2d6-49f1-b3ff-ac45013afd40) is available via Panopto. Note that the video is longer than 5 minutes and that the 5 min upper bound is a target not a strict upper bound.
