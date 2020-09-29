@@ -29,3 +29,11 @@ tabl <- "
 "
 cat(tabl) 
 ```
+
+Unlike our previous homework assignments, for this homework assignment, I will provide an example of what I want the output to look like and will provide some suggestions on how to construct the code to accomplish this, but will not provide the specific code. Your job is to use the examples I demonstrated in class and those from the documentation provided to generate code that accomplishes its goal.
+
+Full credit for the homework assignment requires:
+- output matching the example (knitted html from .Rmd file and Stata output as described)
+- an .Rmd file that will produce the expected output when knit to html
+- Stata do file that produces the Stata output
+- Stata log file from running the do file that contains no errors
