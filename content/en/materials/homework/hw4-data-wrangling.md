@@ -19,38 +19,36 @@ Learning objectives
 This homework is designed to give you practice working with five basic data wrangling tasks using data from the New York Times on coronavirus cases. There are many tutorials online describing the “five main verbs” of `dplyr` (which is part of the `tidyverse`) that show how to accomplish these tasks in R using dplyr/tidyverse. This homework asks you to complete the tasks in both R and Stata. The five basic operations and associated commands are:
 
 <table>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Data task</th>
-<th style="text-align: center;">dplyr commands</th>
-<th style="text-align: center;">Stata commands</th>
-</tr>
-</thead>
 <tbody>
 <tr class="odd">
+<td style="text-align: center;"><strong>Data task</strong></td>
+<td style="text-align: left;"><strong>dplyr commands</strong></td>
+<td style="text-align: left;"><strong>Stata commands</strong></td>
+</tr>
+<tr class="even">
 <td style="text-align: center;">choosing/renaming variables</td>
-<td style="text-align: center;">select, rename, relocate</td>
-<td style="text-align: center;">keep, drop, rename, order</td>
+<td style="text-align: left;">select, rename, relocate</td>
+<td style="text-align: left;">keep, drop, rename, order</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;">sorting data</td>
-<td style="text-align: center;">arrange</td>
-<td style="text-align: center;">sort</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">subsetting data</td>
-<td style="text-align: center;">filter</td>
-<td style="text-align: center;">keep if, drop if</td>
+<td style="text-align: left;">arrange</td>
+<td style="text-align: left;">sort</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">creating/modifying variables</td>
-<td style="text-align: center;">mutate</td>
-<td style="text-align: center;">gen, replace, egen</td>
+<td style="text-align: center;">subsetting data</td>
+<td style="text-align: left;">filter</td>
+<td style="text-align: left;">keep if, drop if</td>
 </tr>
 <tr class="odd">
+<td style="text-align: center;">creating/modifying variables</td>
+<td style="text-align: left;">mutate</td>
+<td style="text-align: left;">gen, replace, egen</td>
+</tr>
+<tr class="even">
 <td style="text-align: center;">computing summary statistics</td>
-<td style="text-align: center;">summarize</td>
-<td style="text-align: center;">summary, collapse</td>
+<td style="text-align: left;">summarize</td>
+<td style="text-align: left;">summary, collapse</td>
 </tr>
 </tbody>
 </table>
@@ -79,6 +77,19 @@ Basic data table
 ----------------
 
 Your first task is to construct a table of the total number of new cases each day in each of the six New England states (Connecticut, Massachusetts, Rhode Island, Maine, Vermont, and New Hampshire) starting on March 15, 2020 and continuing through the day you downloaded the data. Note that the New York Times data archive does include data by state, but your job is to start with the *county* level data to construct the state measures.
+
+The first rows of your table should look like this:
+
+    ## # A tibble: 6 x 4
+    ## # Groups:   date [1]
+    ##   date       state         new_cases cases_to_date
+    ##   <date>     <chr>             <dbl>         <dbl>
+    ## 1 2020-03-15 Connecticut           6            26
+    ## 2 2020-03-15 Maine                 8            12
+    ## 3 2020-03-15 Massachusetts        22           164
+    ## 4 2020-03-15 New Hampshire         5            13
+    ## 5 2020-03-15 Rhode Island          0            20
+    ## 6 2020-03-15 Vermont               3             8
 
 Since the data only reports total cases to date, you will need to construct the new cases each day by using dplyr’s `lag()` function. To use this function, you’ll also want to sort the data by geographic region and by date and then group by geographic region. Then `lag(cases)` will give you the value of `cases` in a particular jurisdiction on the previous day.
 
