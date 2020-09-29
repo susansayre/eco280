@@ -27,36 +27,36 @@ This homework is designed to give you practice working with five basic data wran
 </colgroup>
 <thead>
 <tr class="header">
-<th>Data task</th>
-<th>dplyr commands</th>
-<th>Stata commands</th>
+<th style="text-align: left;">Data task</th>
+<th style="text-align: left;">dplyr commands</th>
+<th style="text-align: left;">Stata commands</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>choosing/renaming variables</td>
-<td>select, rename, relocate</td>
-<td>keep, drop, rename, order</td>
+<td style="text-align: left;">choosing/renaming variables</td>
+<td style="text-align: left;">select, rename, relocate</td>
+<td style="text-align: left;">keep, drop, rename, order</td>
 </tr>
 <tr class="even">
-<td>sorting data</td>
-<td>arrange</td>
-<td>sort</td>
+<td style="text-align: left;">sorting data</td>
+<td style="text-align: left;">arrange</td>
+<td style="text-align: left;">sort</td>
 </tr>
 <tr class="odd">
-<td>subsetting data</td>
-<td>filter</td>
-<td>keep if, drop if</td>
+<td style="text-align: left;">subsetting data</td>
+<td style="text-align: left;">filter</td>
+<td style="text-align: left;">keep if, drop if</td>
 </tr>
 <tr class="even">
-<td>creating/modifying variables</td>
-<td>mutate</td>
-<td>gen, replace, egen</td>
+<td style="text-align: left;">creating/modifying variables</td>
+<td style="text-align: left;">mutate</td>
+<td style="text-align: left;">gen, replace, egen</td>
 </tr>
 <tr class="odd">
-<td>computing summary statistics</td>
-<td>summarize</td>
-<td>summary, collapse</td>
+<td style="text-align: left;">computing summary statistics</td>
+<td style="text-align: left;">summarize</td>
+<td style="text-align: left;">summary, collapse</td>
 </tr>
 </tbody>
 </table>
