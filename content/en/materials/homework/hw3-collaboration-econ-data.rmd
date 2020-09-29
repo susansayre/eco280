@@ -252,7 +252,7 @@ final_object <- starting_object %>%
          new_var2 = var1*var2)
 ```
 
-In my head, I read this as *generate the object `final_object` using the following recipe: start with the old object `starting_object` and then rename a bunch of variables, and then create a bunch of new variables. Every time, I see a `%>%` character I mentally replace it with "and then".
+In my head, I read this as "generate the object `final_object` using the following recipe: start with the old object `starting_object` and then rename a bunch of variables, and then create a bunch of new variables." Every time, I see a `%>%` character I mentally replace it with "and then".
 
 Either before or after your code chunk, write a short text description describing what year you used to measure real prices.
 
@@ -285,7 +285,7 @@ When you're done, save your .Rmd file, knit it, and stage, commit, and push both
 Note:
 Because it's different than the point-and-click style interface you may be used to with programs like Excel and Stata, it may take a while to get used to the construction of graphs using ggplot. Two excellent references for helping to learn are:
 
-- [Chapter 3](https://socviz.co/makeplot.html) of Kiernan Healy's [Data Visualization]() book walks through the logic of constructing a graph in ggplot. It introduces you to fewer options than the second reference but does a better job of explaining the logic of ggplot (and the grammar of graphics in general). 
+- [Chapter 3](https://socviz.co/makeplot.html) of Kiernan Healy's [Data Visualization](https://socviz.co/) book walks through the logic of constructing a graph in ggplot. It introduces you to fewer options than the second reference but does a better job of explaining the logic of ggplot (and the grammar of graphics in general). 
 - [Chapter 3](https://r4ds.had.co.nz/data-visualisation.html) of Hadley Wickham's e-book [R for Data Science](https://r4ds.had.co.nz/). (Sidenote: the rest of the book is a very useful resource for R/RStudio and the tidyverse packages in general.) This reference teaches ggplot through a series of examples helping you construct increasingly complex graphs.
 
 
