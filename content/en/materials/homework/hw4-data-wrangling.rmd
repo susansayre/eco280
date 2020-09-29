@@ -4,6 +4,8 @@ title: HW 4 - Data wrangling
 output: 
   md_document:
     preserve_yaml: true
+    pandoc_args: ["--wrap=preserve"]
+
 ---
 
 ## Submission details
@@ -17,7 +19,7 @@ This homework is designed to give you practice working with five basic data wran
 
 ```{r five verb table, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
 tabl <- "  
-| Data task                   | dplyr commands | Stata commands  |
+| Data task                   | dplyr commands           | Stata commands           |
 |-----------------------------|--------------------------|--------------------------|
 | choosing/renaming variables | select, rename, relocate | keep, drop, rename, order|
 | sorting data                | arrange                  | sort                     |
