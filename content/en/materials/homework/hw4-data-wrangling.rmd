@@ -45,36 +45,39 @@ For this assignment, begin with R and conduct your analysis in an RMarkdown docu
 
 This section should include a short statement of where you located the data. You will be downloading the data from the [New York Times coronavirus git repo](https://github.com/nytimes/covid-19-data). You should read through the description of the data and provide a very brief description of the data and any important things you notice from the description here. (This should not be long. 1-4 sentences is sufficient.)
 
-The specific file link is [https://raw.githubusercontent.com/nytimes/covid-19-data/master/live/us-counties.csv](https://raw.githubusercontent.com/nytimes/covid-19-data/master/live/us-counties.csv). Download the data to your computer, store it as a .csv file in a folder called data and create a markdown file (*not an RMarkdown file*) called README.md inside the data folder that describes where you got the data.
+The specific file link is [https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv](https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv). You can supply this url directly to the read_csv() function to read in the data or you can download the data to your computer, store it as a .csv file in a folder called data and create a markdown file (*not an RMarkdown file*) called README.md inside the data folder that describes where you got the data. Similarly, data can be directly read into Stata by providing the url instead of a filename.
 
 ## Basic data table
 
-Your first task is to construct a table of the total number of new cases each day in each of the six New England states (Connecticut, Massachusetts, Rhode Island, Maine, Vermont, and New Hampshire) starting on March 15, 2020 and continuing through the day you downloaded the data. Note that the New York Times data archive does include data by state, but your job is to start with the *county* level data to construct the state measures.
+Your first task is to construct a table containing the total cases and the new cases each day for each county in one of the six New England states (Connecticut, Massachusetts, Rhode Island, Maine, Vermont, and New Hampshire) starting on March 15, 2020 and continuing through the day you downloaded the data. It should contain only these variables.
 
-The first rows of your table should look like this:
-```{r load data from git, echo = F, message = F}
+Since the data only reports total cases to date, you will need to construct the new cases each day by using dplyr's `lag()` function. To use this function, you'll also want to sort the data by geographic region and by date and then group by geographic region. Then `lag(cases)` will give you the value of `cases` in a particular jurisdiction on the previous day. Once you've constructed the table, use the head() function to print the first few rows of data in your output. It should look like this:
+
+```{r generate county data, echo = F, message = F}
 county_data <- read_csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv") %>% 
+  filter(state %in% c("Connecticut", "Massachusetts", "Rhode Island", "Maine", "New Hampshire", "Vermont")) %>% 
   group_by(county, state) %>% 
   mutate(new_cases = cases - lag(cases)) %>% 
-  select(date, county, state, new_cases, total_cases = cases)
+  select(date, county, state, new_cases, total_cases = cases) %>% 
+  filter(date >= as.Date("2020-03-15")) 
 
+head(county_data)
+```
+
+Next, you should total by state to get state level totals on new_cases per day using the methods we discussed in class. Note that the New York Times data archive does include data by state, but your job is to start with the *county* level data to construct the state measures.
+
+Print the first few rows using the head() function; they should look like this:
+
+```{r generate state total, echo = F, message = F}
 ne_data <- county_data %>% 
   group_by(date, state) %>% 
-  summarize(new_cases = sum(new_cases, na.rm = T), cases_to_date = sum(total_cases, na.rm = T)) %>% 
-  filter(date >= as.Date("2020-03-15")) %>% 
-  filter(state %in% c("Connecticut", "Massachusetts", "Rhode Island", "Maine", "New Hampshire", "Vermont"))
+  summarize(new_cases = sum(new_cases, na.rm = T), cases_to_date = sum(total_cases, na.rm = T)) 
 
 head(ne_data)
 
 ```
 
-Since the data only reports total cases to date, you will need to construct the new cases each day by using dplyr's `lag()` function. To use this function, you'll also want to sort the data by geographic region and by date and then group by geographic region. Then `lag(cases)` will give you the value of `cases` in a particular jurisdiction on the previous day.
-
-To get from county level data to state level data, you'll need to follow the steps from class to compute totals.
-
-You should also make sure that only the data for New England is included and that the variables are in the order shown in the example table and have the same names. Use the head() function to print the first few rows of the table in your output.
-
-Once you've generated the table in your Rmd, construct a do file that creates the same table in Stata. You do **not** need to complete the remaining tasks in Stata. Push your do file and a log file to git. To generate the new case variable in Stata, adapt the code from [this manual page](https://www.stata.com/support/faqs/data-management/creating-lagged-variables/).
+Once you've generated the table in your Rmd, construct a do file that creates the same two tables in Stata. You can print the first few rows of data in Stata using the command `list in 1/6`. You do **not** need to complete the remaining tasks in Stata, although if you are relatively experienced using R, I strongly encourage you to experiment to see if you *can* complete them in Stata. Push your do file and a log file to git. To generate the new case variable in Stata, adapt the code from [this manual page](https://www.stata.com/support/faqs/data-management/creating-lagged-variables/).
 
 ## Investigate the data
 
@@ -96,7 +99,9 @@ head(max_min)
 Using the `wday()` function from the lubridate package, find the day of the week for each day and compute the average number of new cases for each day of the week. Again, use head() or print() to share the results and describe any pattern you notice.
 
 ## Generate a plot
-Generate a series of side-by-side plots of new cases by day in each state by day that looks like the example below. When you first plot the data, at least one state will look very different. You'll need to use the facet_wrap() layer to create the small multiples. Try typing ?facet_wrap in the console to figure out how to set the axes to vary across states so that you can see the lines for all the states. Write a brief description of the changes you have to make to get the graph to look like the example and use the `caption = "caption text"` argument to the `labs()` layer of your ggplot call to add a note to the chart explaining the change you made. (Hint: one of the earlier tasks may help you determine what to change.)
+Generate a series of side-by-side plots of new cases by day in each state by day overlayed with a smoothed line showing how new_deaths have changed over time. Use the default smoothing method ("loess"). You'll need to use the facet_wrap() layer to create the small multiples. Try typing `?facet_wrap` in the console to figure out how to set the axes to vary across states so that you can see the lines for all the states. 
+
+Your plot should ultimately look like the example below. When you first plot the data, at least one state will look very different. Write a brief description of the changes you have to make to get the graph to look like the example and use the `caption = "caption text"` argument to the `labs()` layer of your ggplot call to add a note to the chart explaining the change you made. (Hint: one of the earlier tasks may help you determine what to change.)
 
 ```{r new cases plot, echo = F, message = F}
 ne_data %>% filter(new_cases>0) %>% 
