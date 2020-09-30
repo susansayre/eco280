@@ -56,13 +56,10 @@ This homework is designed to give you practice working with five basic data wran
 Unlike our previous homework assignments, for this homework assignment, I will provide an example of what I want the output to look like and will provide some suggestions on how to construct the code to accomplish this, but will not provide the specific code. Your job is to use the examples I demonstrated in class and those from the documentation provided to generate code that accomplishes its goal.
 
 Full credit for the homework assignment requires:
-- output matching the example (knitted html from .Rmd file and Stata output as described)
-- an .Rmd file that will produce the expected output when knit to html
-- Stata do file that produces the Stata output
-- Stata log file from running the do file that contains no errors
-
-Generate table of data
-======================
+- A knitted html file produced from the .Rmd file that contains output matching the examples
+- The .Rmd file that produces the html file
+- A Stata do file that produces a dataset matching the basic table described below
+- The Stata log file from running the do file that contains no errors
 
 For this assignment, begin with R and conduct your analysis in an RMarkdown document. It should contain several sections with headers to identify them.
 
@@ -102,11 +99,21 @@ Once you’ve generated the table in your Rmd, construct a do file that creates 
 Investigate the data
 --------------------
 
-Find that maximum and minimum number of new cases reported on an individual day in each state. (You do **not** need to keep track of *which* day this occurred on). Have your code print the answer in a table by state. After the table describe what you notice in a text section of the .Rmd file.
+Find that maximum and minimum number of new cases reported on an individual day in each state. (You do **not** need to keep track of *which* day this occurred on). Have your code print the answer in a table by state using either the head() or the print() function. After the table describe what you notice in a text section of the .Rmd file. Your table should look like this one, but will contain data for the New England states instead of these ones.
 
-Using the `wday()` function from the lubridate package, find the day of the week for each day and compute the average number of new cases for each day of the week. Print a table of your answer and describe any pattern you notice.
+    ## # A tibble: 4 x 3
+    ##   state        max_daily_new_cases min_daily_new_cases
+    ##   <chr>                      <dbl>               <dbl>
+    ## 1 Maryland                    1782                   0
+    ## 2 New York                   12274                   0
+    ## 3 Pennsylvania                2033                   0
+    ## 4 Virginia                    2015                   0
+
+Using the `wday()` function from the lubridate package, find the day of the week for each day and compute the average number of new cases for each day of the week. Again, use head() or print() to share the results and describe any pattern you notice.
 
 Generate a plot
 ---------------
 
-Generate a series of side-by-side plots of new cases by day in each state by day that looks like the example. When you first plot the data, at least one state will look very different. Write a brief description of the changes you have to make to get the graph to look like the example and use the `caption = "caption text"` argument to the `labs()` layer of your ggplot call to add a note to the chart explaining the change you made. (Hint: one of the earlier tasks may help you determine what to change.)
+Generate a series of side-by-side plots of new cases by day in each state by day that looks like the example below. When you first plot the data, at least one state will look very different. You’ll need to use the facet\_wrap() layer to create the small multiples. Try typing ?facet\_wrap in the console to figure out how to set the axes to vary across states so that you can see the lines for all the states. Write a brief description of the changes you have to make to get the graph to look like the example and use the `caption = "caption text"` argument to the `labs()` layer of your ggplot call to add a note to the chart explaining the change you made. (Hint: one of the earlier tasks may help you determine what to change.)
+
+![](hw4-data-wrangling_files/figure-markdown_strict/new%20cases%20plot-1.png)
