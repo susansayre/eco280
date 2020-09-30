@@ -111,6 +111,8 @@ We will discuss five core data wrangling tasks:
 
 I will briefly describe how to accomplish each task in R and in Stata and will introduce HW 4, which will give you practice doing these tasks.
 
+[Slack post with link to recording](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1601490173000600)
+
 ### Week 6 (10/5 - 10/9) 
 
 [Literature review](/materials/papers/lit-review) due next Wed 10/14
