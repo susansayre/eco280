@@ -111,19 +111,14 @@ We will discuss five core data wrangling tasks:
 
 I will briefly describe how to accomplish each task in R and in Stata and will introduce HW 4, which will give you practice doing these tasks.
 
+[GitHub repo containing completed R and Stata code](https://github.com/eco280/data_wrangling)
+
 Videos:
 - [Slack post with link to class recording](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1601490173000600)
 - [Panopto to link to video of completing tasks in Stata](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d7100189-3e57-435d-a6d3-ac4700f09c7b)
 - [Panopto to link to cleaner video of completing tasks in R](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ab2f99e6-a8d3-4259-95e1-ac47011fa3aa)
 
 Note: These videos include a bunch of talking and aren't necessarily the most efficient way to see how to accomplish the tasks in Stata. I tried to give you a flavor of how I proceed while developing a program in Stata so I left in a few places where I used the wrong function and explicitly demonstrated a few mistakes and how I check to see if the code is working the way I want. My recommendation is to watch the video at an increased speed and then slow down for the specific parts you're interested in. The two Panopto videos have a rough table of contents to help you find various sections.
-
-Files:
-- [Stata log file of interactive session](/docs/data-wrangling/data_wrangling.smcl)
-- [Completed Stata do file](/docs/data-wrangling/data_wrangling.do)
-- [Clean Stata log from running final do file](/docs/data-wrangling/data_wrangling_final.smcl)
-- [Complete .Rmd document](/docs/data-wrangling/data-wrangling.Rmd)
-- [Knitted output from .Rmd file](/docs/data-wrangling/data-wrangling.html)
 
 ### Week 6 (10/5 - 10/9) 
 
