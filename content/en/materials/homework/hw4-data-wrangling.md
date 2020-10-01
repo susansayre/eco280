@@ -10,13 +10,19 @@ output:
 Submission details
 ==================
 
--   Commit and **push** working code to your github repo by 9am EST on **Thurs 10/8**
--   Note atypical due date due to Mountain Day adjustments
+-   Click here to [accept the assignment](https://classroom.github.com/a/1iAQMOnr) on GitHub classroom
+-   Commit and **push** working code to your github repo by 9am EST on **Thurs 10/8** (Note atypical due date due to Mountain Day adjustments)
 
 Learning objectives
 ===================
 
-This homework is designed to give you practice working with five basic data wrangling tasks using data from the New York Times on coronavirus cases. There are many tutorials online describing the “five main verbs” of `dplyr` (which is part of the `tidyverse`) that show how to accomplish these tasks in R using dplyr/tidyverse. This homework asks you to complete the tasks in both R and Stata. The five basic operations and associated commands are:
+This homework is designed to give you practice working with five basic data wrangling tasks using data from the New York Times on coronavirus cases. There are many tutorials online describing the “five main verbs” of `dplyr` (which is part of the `tidyverse`) that show how to accomplish these tasks in R using dplyr/tidyverse. Examples include:
+
+-   Ben Stanhaug “[The 5 verbs of dplyr](https://teachingr.com/content/the-5-verbs-of-dplyr/the-5-verbs-of-dplyr-article.html)”
+-   [dplyr Manipulation Verbs](https://www.dezyre.com/data-science-in-r-programming-tutorial/dplyr-manipulations-verbs)
+-   From our own SDS 192 class: Ben Baumer’s “[Single-Table Analysis with dplyr](https://beanumber.github.io/sds192/lab-single_table.html)”
+
+This homework asks you to complete tasks that require these operations in both R and Stata. The five basic operations and associated commands are:
 
 <table>
 <tbody>
@@ -78,15 +84,15 @@ Your first task is to construct a table containing the total cases and the new c
 Since the data only reports total cases to date, you will need to construct the new cases each day by using dplyr’s `lag()` function. To use this function, you’ll also want to sort the data by geographic region and by date and then group by geographic region. Then `lag(cases)` will give you the value of `cases` in a particular jurisdiction on the previous day. Once you’ve constructed the table, use the head() function to print the first few rows of data in your output. It should look like this:
 
     ## # A tibble: 6 x 5
-    ## # Groups:   county, state [6]
-    ##   date       county       state       new_cases total_cases
-    ##   <date>     <chr>        <chr>           <dbl>       <dbl>
-    ## 1 2020-03-15 Fairfield    Connecticut         1          16
-    ## 2 2020-03-15 Hartford     Connecticut         2           3
-    ## 3 2020-03-15 Litchfield   Connecticut         1           4
-    ## 4 2020-03-15 New Haven    Connecticut         2           3
-    ## 5 2020-03-15 Androscoggin Maine               0           1
-    ## 6 2020-03-15 Cumberland   Maine               8          10
+    ## # Groups:   county, state [3]
+    ##   date       county    state      new_cases total_cases
+    ##   <date>     <chr>     <chr>          <dbl>       <dbl>
+    ## 1 2020-01-21 Snohomish Washington        NA           1
+    ## 2 2020-01-22 Snohomish Washington         0           1
+    ## 3 2020-01-23 Snohomish Washington         0           1
+    ## 4 2020-01-24 Cook      Illinois          NA           1
+    ## 5 2020-01-24 Snohomish Washington         0           1
+    ## 6 2020-01-25 Orange    California        NA           1
 
 Next, you should total by state to get state level totals on new\_cases per day using the methods we discussed in class. Note that the New York Times data archive does include data by state, but your job is to start with the *county* level data to construct the state measures.
 
@@ -110,13 +116,13 @@ Investigate the data
 
 Find that maximum and minimum number of new cases reported on an individual day in each state. (You do **not** need to keep track of *which* day this occurred on). Have your code print the answer in a table by state using either the head() or the print() function. After the table describe what you notice in a text section of the .Rmd file. Your table should look like this one, but will contain data for the New England states instead of these ones.
 
-    ## Warning in max(new_cases): no non-missing arguments to max; returning -Inf
-
-    ## Warning in min(new_cases): no non-missing arguments to min; returning Inf
-
-    ## # A tibble: 0 x 3
-    ## # ... with 3 variables: state <chr>, max_daily_new_cases <dbl>,
-    ## #   min_daily_new_cases <dbl>
+    ## # A tibble: 4 x 3
+    ##   state        max_daily_new_cases min_daily_new_cases
+    ##   <chr>                      <dbl>               <dbl>
+    ## 1 Maryland                    1782                   0
+    ## 2 New York                   12274                   0
+    ## 3 Pennsylvania                2033                   0
+    ## 4 Virginia                    2015                   0
 
 Using the `wday()` function from the lubridate package, find the day of the week for each day and compute the average number of new cases for each day of the week. Again, use head() or print() to share the results and describe any pattern you notice.
 
