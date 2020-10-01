@@ -133,4 +133,4 @@ Generate a series of side-by-side plots of new cases by day in each state by day
 
 Your plot should ultimately look like the example below. When you first plot the data, at least one state will look very different. Write a brief description of the changes you have to make to get the graph to look like the example and use the `caption = "caption text"` argument to the `labs()` layer of your ggplot call to add a note to the chart explaining the change you made. (Hint: one of the earlier tasks may help you determine what to change.)
 
-![](hw4-data-wrangling_files/figure-markdown_strict/new%20cases%20plot-1.png)
+![Plot of new cases by state in New England](/static/images/hw4-plot.png)
