@@ -1,0 +1,65 @@
+---
+title: "Data Wrangling Example"
+author: "Susan Sayre"
+date: "10/1/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(lubridate)
+```
+
+# Import Data
+
+Let's import some data. We might want to add information about where it came from or anything we should know about the data.
+
+```{r import data, echo = F}
+unemployment_data <- read_csv("data/clean_unemployment_data.csv") %>% 
+  mutate(file_week_end = as.Date(file_week_end, "%m/%d/%Y"),
+         claim_week_end = as.Date(claim_week_end, "%m/%d/%Y"))
+```
+# Check unemployment rate
+```{r list non-matches, echo = F}
+
+unemployment_data %>% 
+  mutate(calculated_rate = round(continued_claims/covered_employment*100, 2)) %>% 
+  filter(calculated_rate != unemployment_rate) 
+```
+
+# Extract data for CT and MA
+```{r extract ct and ma data, echo = F}
+
+ct_ma <- unemployment_data %>% 
+  filter(state %in% c("Connecticut", "Massachusetts")) %>% 
+  select(state, file_week_end, initial_claims, claim_week_end)
+
+```
+ 
+ 
+# Compute monthly totals of new claims by state
+```{r compute monthly totals}
+monthly_new_claims <- ct_ma %>% 
+  mutate(year = year(claim_week_end),
+         month = month(claim_week_end)) %>% 
+  group_by(state, month, year) %>% 
+  summarize(monthly_new_claims = sum(initial_claims),
+            mean_weekly_new_claims = mean(initial_claims)) %>% 
+  mutate(month_start = make_date(year, month, 1))
+
+```
+# Create graph
+```{r graph new claims}
+
+ggplot(monthly_new_claims, aes(month_start, monthly_new_claims)) + 
+  geom_line() +
+  geom_line(aes(y = mean_weekly_new_claims), color = "red") +
+  facet_wrap(vars(state)) +
+  ylab("Monthly new claims (total and average by week)") +
+  xlab("Month start") +
+  labs(title = "Monthly new unemployment claims")
+
+```
+
+ 

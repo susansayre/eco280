@@ -1,0 +1,225 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\ssayre\Documents\activeProjectRepositories\data_wrangling\data_wrangling.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 1 Oct 2020, 10:38:09
+
+{com}. insheet using "data/clean_unemployment_data.csv"
+{txt}(7 vars, 13,038 obs)
+
+{com}. gen file_week_date = date(file_week_end, "MDY")
+
+. format %td
+{err}varlist required
+{txt}{search r(100), local:r(100);}
+
+{com}. format file_week_end %td
+{err}string %fmt required for string variables
+{txt}{search r(120), local:r(120);}
+
+{com}. format file_week_date %td
+
+. clear
+
+. do data_wrangling
+{txt}
+{com}. *log using "data_wrangling.smcl"
+. 
+. *import data
+. insheet using "data/clean_unemployment_data.csv"
+{txt}(7 vars, 13,038 obs)
+
+{com}. 
+. *format string dates as dates
+. gen file_week_date = date(file_week_end, "MDY")
+{txt}
+{com}. format file_week_date %td
+{txt}
+{com}. 
+. gen claim_week_date = date(claim_week_end, "MDY")
+{txt}
+{com}. format claim_week_date %td
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. drop file_week_end claim_week_end
+
+. gen calculated_rate = continued_claim/covered_employment*100
+
+. drop calculated_rate
+
+. gen calculated_rate = round(continued_claim/covered_employment*100,2)
+
+. help round
+
+. drop calculated_rate
+
+. gen calculated_rate = round(continued_claim/covered_employment*100,.01)
+
+. list if unemployment_rate != calculated_rate
+
+. save full_data
+{txt}file full_data.dta saved
+
+{com}. preserve
+
+. drop if unemployment_rate == calculated_rate
+{txt}(13,038 observations deleted)
+
+{com}. restore
+
+. preserve
+
+. keep if unemployment_rate != calculated_rate
+{txt}(13,038 observations deleted)
+
+{com}. restore
+
+. keep if inlist(state, "Connecticut", "Massachusetts")
+{txt}(12,546 observations deleted)
+
+{com}. gen month = mdy(file_week_date)
+{err}invalid syntax
+{txt}{search r(198), local:r(198);}
+
+{com}. gen month = month(file_week_date)
+
+. clear
+
+. do data_wrangling
+{txt}
+{com}. *log using "data_wrangling.smcl"
+. 
+. *import data
+. insheet using "data/clean_unemployment_data.csv"
+{txt}(7 vars, 13,038 obs)
+
+{com}. 
+. *format string dates as dates
+. gen file_week_date = date(file_week_end, "MDY")
+{txt}
+{com}. format file_week_date %td
+{txt}
+{com}. 
+. gen claim_week_date = date(claim_week_end, "MDY")
+{txt}
+{com}. format claim_week_date %td
+{txt}
+{com}. 
+. drop file_week_end claim_week_end
+{txt}
+{com}. 
+. *compute unemployment rate and check with rate from data
+. gen calculated_rate = round(continued_claim/covered_employment*100,.01)
+{txt}
+{com}. 
+. preserve
+{txt}
+{com}. keep if unemployment_rate != calculated_rate
+{txt}(13,038 observations deleted)
+
+{com}. restore
+{txt}
+{com}. 
+. *pull out data for CT and MA
+. keep if inlist(state, "Connecticut", "Massachusetts")
+{txt}(12,546 observations deleted)
+
+{com}. 
+. *compute total monthly new claims by state
+. gen month = month(file_week_date)
+{txt}
+{com}. gen year = year(file_week_date)
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. sort state year month
+
+. help collapse
+
+. collapse (sum) initial_claims, by(state year month)
+
+. gen month_start = mdy(month, 1, year)
+
+. twoway (line initial_claims month_start)
+{res}
+{com}. twoway (line initial_claims month_start), by(state)
+{res}
+{com}. format month_start %td
+
+. twoway (line initial_claims month_start), by(state)
+{res}
+{com}. clear
+
+. do data_wrangling
+{txt}
+{com}. *log using "data_wrangling.smcl"
+. 
+. *import data
+. insheet using "data/clean_unemployment_data.csv"
+{txt}(7 vars, 13,038 obs)
+
+{com}. 
+. *format string dates as dates
+. gen file_week_date = date(file_week_end, "MDY")
+{txt}
+{com}. format file_week_date %td
+{txt}
+{com}. 
+. gen claim_week_date = date(claim_week_end, "MDY")
+{txt}
+{com}. format claim_week_date %td
+{txt}
+{com}. 
+. drop file_week_end claim_week_end
+{txt}
+{com}. 
+. *compute unemployment rate and check with rate from data
+. gen calculated_rate = round(continued_claim/covered_employment*100,.01)
+{txt}
+{com}. 
+. preserve
+{txt}
+{com}. keep if unemployment_rate != calculated_rate
+{txt}(13,038 observations deleted)
+
+{com}. restore
+{txt}
+{com}. 
+. *pull out data for CT and MA
+. keep if inlist(state, "Connecticut", "Massachusetts")
+{txt}(12,546 observations deleted)
+
+{com}. 
+. *compute total monthly new claims by state
+. gen month = month(file_week_date)
+{txt}
+{com}. gen year = year(file_week_date)
+{txt}
+{com}. 
+. sort state year month
+{txt}
+{com}. collapse (sum) initial_claims, by(state year month)
+{txt}
+{com}. 
+. *graph monthly claims
+. gen month_start = mdy(month, 1, year)
+{txt}
+{com}. format month_start %td
+{txt}
+{com}. twoway (line initial_claims month_start), by(state)
+{res}{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\ssayre\Documents\activeProjectRepositories\data_wrangling\data_wrangling.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 1 Oct 2020, 11:10:15
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
