@@ -81,7 +81,7 @@ Basic data table
 
 Your first task is to construct a table containing the total cases and the new cases each day for each county in one of the six New England states (Connecticut, Massachusetts, Rhode Island, Maine, Vermont, and New Hampshire) starting on March 15, 2020 and continuing through the day you downloaded the data. It should contain only these variables.
 
-Since the data only reports total cases to date, you will need to construct the new cases each day by using dplyr’s `lag()` function. To use this function, you’ll also want to sort the data by geographic region and by date and then group by geographic region. Then `lag(cases)` will give you the value of `cases` in a particular jurisdiction on the previous day, which you can then use to constuct a measure of **new** cases that day. Once you’ve constructed the table, use the head() function to print the first few rows of data in your output. It should look like this:
+Since the data only reports total cases to date, you will need to construct a variable containing the new cases each day by using dplyr’s `lag()` function. To use this function, you’ll also want to sort the data by geographic region and by date and then group by geographic region. Then `lag(cases)` will give you the value of `cases` in a particular jurisdiction on the previous day, which you can then use to construct a measure of **new** cases that day. Once you’ve constructed the table, use the head() function to print the first few rows of data in your output. It should look like this:
 
     ## # A tibble: 6 x 5
     ## # Groups:   county, state [6]
