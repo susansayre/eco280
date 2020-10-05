@@ -126,4 +126,4 @@ ggplot(aes(date, new_cases)) +
 ggsave(file.path(here(),"static/images/hw4-plot.png"))
 ```
 
-![Plot of new cases by state in New England](/static/images/hw4-plot.png)
+![Plot of new cases by state in New England](/images/hw4-plot.png)
