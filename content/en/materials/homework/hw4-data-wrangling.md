@@ -81,18 +81,18 @@ Basic data table
 
 Your first task is to construct a table containing the total cases and the new cases each day for each county in one of the six New England states (Connecticut, Massachusetts, Rhode Island, Maine, Vermont, and New Hampshire) starting on March 15, 2020 and continuing through the day you downloaded the data. It should contain only these variables.
 
-Since the data only reports total cases to date, you will need to construct the new cases each day by using dplyr’s `lag()` function. To use this function, you’ll also want to sort the data by geographic region and by date and then group by geographic region. Then `lag(cases)` will give you the value of `cases` in a particular jurisdiction on the previous day. Once you’ve constructed the table, use the head() function to print the first few rows of data in your output. It should look like this:
+Since the data only reports total cases to date, you will need to construct the new cases each day by using dplyr’s `lag()` function. To use this function, you’ll also want to sort the data by geographic region and by date and then group by geographic region. Then `lag(cases)` will give you the value of `cases` in a particular jurisdiction on the previous day, which you can then use to constuct a measure of **new** cases that day. Once you’ve constructed the table, use the head() function to print the first few rows of data in your output. It should look like this:
 
     ## # A tibble: 6 x 5
-    ## # Groups:   county, state [3]
-    ##   date       county    state      new_cases total_cases
-    ##   <date>     <chr>     <chr>          <dbl>       <dbl>
-    ## 1 2020-01-21 Snohomish Washington        NA           1
-    ## 2 2020-01-22 Snohomish Washington         0           1
-    ## 3 2020-01-23 Snohomish Washington         0           1
-    ## 4 2020-01-24 Cook      Illinois          NA           1
-    ## 5 2020-01-24 Snohomish Washington         0           1
-    ## 6 2020-01-25 Orange    California        NA           1
+    ## # Groups:   county, state [6]
+    ##   date       county       state       new_cases total_cases
+    ##   <date>     <chr>        <chr>           <dbl>       <dbl>
+    ## 1 2020-03-15 Fairfield    Connecticut         1          16
+    ## 2 2020-03-15 Hartford     Connecticut         2           3
+    ## 3 2020-03-15 Litchfield   Connecticut         1           4
+    ## 4 2020-03-15 New Haven    Connecticut         2           3
+    ## 5 2020-03-15 Androscoggin Maine               0           1
+    ## 6 2020-03-15 Cumberland   Maine               8          10
 
 Next, you should total by state to get state level totals on new\_cases per day using the methods we discussed in class. Note that the New York Times data archive does include data by state, but your job is to start with the *county* level data to construct the state measures.
 
