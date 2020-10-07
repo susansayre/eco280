@@ -61,7 +61,9 @@ Your first task is to construct a table containing the total cases and the new c
 Since the data only reports total cases to date, you will need to construct a variable containing the new cases each day by using dplyr's `lag()` function. To use this function, you'll also want to sort the data by geographic region and by date and then group by geographic region. Then `lag(cases)` will give you the value of `cases` in a particular jurisdiction on the previous day, which you can then use to construct a measure of **new** cases that day. Once you've constructed the table, use the head() function to print the first few rows of data in your output. It should look like this:
 
 ```{r generate county data, echo = F, message = F}
-all_county_data <- read_csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv") %>% 
+all_county_data <- read_csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv") 
+
+all_county_data <- all_county_data %>% 
   group_by(county, state) %>% 
   mutate(new_cases = cases - lag(cases)) %>% 
   select(date, county, state, new_cases, total_cases = cases) 
@@ -72,6 +74,8 @@ ne_county_data <- all_county_data %>%
 
 head(ne_county_data)
 ```
+
+If you have missing data points on March 15, but everything seems to be working for the other counties, I encourage you to pick a specific county and look at the original data to see if you can figure out how many new cases were added in that country on March 15. Then look at your specific code to see why R might not know how many cases were added.
 
 Next, you should total by state to get state level totals on new_cases per day using the methods we discussed in class. Note that the New York Times data archive does include data by state, but your job is to start with the *county* level data to construct the state measures.
 
@@ -105,12 +109,12 @@ max_min <- example_data %>%
 head(max_min)
 ```
 
-Using the `wday()` function from the lubridate package, find the day of the week for each day and compute the average number of new cases for each day of the week. Again, use head() or print() to share the results and describe any pattern you notice.
+Once you've done this, we want to do a separate computation of the average number of new cases each weekday in New England. Using the `wday()` function from the lubridate package, find the day of the week for each day and compute the average number of new cases (in all of New England) for each day of the week. (Hint: before writing code, try to describe in words what you need to do to compute this value). The table should answer the question "How many new cases were reported on an average Sunday in New England over the period from March 15 to the end of the data?" (and similarly for each other day.) Again, use head() or print() to share the results and describe any pattern you notice. You should have a table with seven rows -- one for each day of the week.
 
 ## Generate a plot
-Generate a series of side-by-side plots of new cases by day in each state by day overlayed with a smoothed line showing how new_deaths have changed over time. Use the default smoothing method ("loess"). You'll need to use the facet_wrap() layer to create the small multiples. Try typing `?facet_wrap` in the console to figure out how to set the axes to vary across states so that you can see the lines for all the states. 
+Generate a series of side-by-side plots of new cases by day in each state by day overlaid with a smoothed line showing how new cases have changed over time. Use the default smoothing method ("loess"). (Hint: you plotted a different smoothed relationship in your real price graph on HW 3. That one used the linear model (lm) method for smoothing.) You'll need to use the facet_wrap() layer to create the small multiples. Try typing `?facet_wrap` in the console to figure out how to set the scale of the axes to vary across states so that you can see the lines for all the states (hint: we do not want the scale to be fixed across all the panels.)
 
-Your plot should ultimately look like the example below. When you first plot the data, at least one state will look very different. Write a brief description of the changes you have to make to get the graph to look like the example and use the `caption = "caption text"` argument to the `labs()` layer of your ggplot call to add a note to the chart explaining the change you made. (Hint: one of the earlier tasks may help you determine what to change.)
+Your plot should ultimately look like the example below. When you first plot the data, at least one state will look very different. Look at your graphs and think about what looks so different from mine. Write a brief description of the changes you have to make to get the graph to look like the example and use the `caption = "caption text"` argument to the `labs()` layer of your ggplot call to add a note to the chart explaining the change you made. (Hint: one of the earlier tasks may help you determine what to change.)
 
 ```{r new cases plot, echo = F, message = F, include = F}
 ne_data %>% filter(new_cases>0) %>% 

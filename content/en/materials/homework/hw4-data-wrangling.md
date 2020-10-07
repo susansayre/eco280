@@ -94,6 +94,8 @@ Since the data only reports total cases to date, you will need to construct a va
     ## 5 2020-03-15 Androscoggin Maine               0           1
     ## 6 2020-03-15 Cumberland   Maine               8          10
 
+If you have missing data points on March 15, but everything seems to be working for the other counties, I encourage you to pick a specific county and look at the original data to see if you can figure out how many new cases were added in that country on March 15. Then look at your specific code to see why R might not know how many cases were added.
+
 Next, you should total by state to get state level totals on new\_cases per day using the methods we discussed in class. Note that the New York Times data archive does include data by state, but your job is to start with the *county* level data to construct the state measures.
 
 Print the first few rows using the head() function; they should look like this:
@@ -124,13 +126,13 @@ Find that maximum and minimum number of new cases reported on an individual day 
     ## 3 Pennsylvania                2033                   0
     ## 4 Virginia                    2015                   0
 
-Using the `wday()` function from the lubridate package, find the day of the week for each day and compute the average number of new cases for each day of the week. Again, use head() or print() to share the results and describe any pattern you notice.
+Once you’ve done this, we want to do a separate computation of the average number of new cases each weekday in New England. Using the `wday()` function from the lubridate package, find the day of the week for each day and compute the average number of new cases (in all of New England) for each day of the week. (Hint: before writing code, try to describe in words what you need to do to compute this value). The table should answer the question “How many new cases were reported on an average Sunday in New England over the period from March 15 to the end of the data?” (and similarly for each other day.) Again, use head() or print() to share the results and describe any pattern you notice. You should have a table with seven rows – one for each day of the week.
 
 Generate a plot
 ---------------
 
-Generate a series of side-by-side plots of new cases by day in each state by day overlayed with a smoothed line showing how new\_deaths have changed over time. Use the default smoothing method (“loess”). You’ll need to use the facet\_wrap() layer to create the small multiples. Try typing `?facet_wrap` in the console to figure out how to set the axes to vary across states so that you can see the lines for all the states.
+Generate a series of side-by-side plots of new cases by day in each state by day overlaid with a smoothed line showing how new cases have changed over time. Use the default smoothing method (“loess”). (Hint: you plotted a different smoothed relationship in your real price graph on HW 3. That one used the linear model (lm) method for smoothing.) You’ll need to use the facet\_wrap() layer to create the small multiples. Try typing `?facet_wrap` in the console to figure out how to set the scale of the axes to vary across states so that you can see the lines for all the states (hint: we do not want the scale to be fixed across all the panels.)
 
-Your plot should ultimately look like the example below. When you first plot the data, at least one state will look very different. Write a brief description of the changes you have to make to get the graph to look like the example and use the `caption = "caption text"` argument to the `labs()` layer of your ggplot call to add a note to the chart explaining the change you made. (Hint: one of the earlier tasks may help you determine what to change.)
+Your plot should ultimately look like the example below. When you first plot the data, at least one state will look very different. Look at your graphs and think about what looks so different from mine. Write a brief description of the changes you have to make to get the graph to look like the example and use the `caption = "caption text"` argument to the `labs()` layer of your ggplot call to add a note to the chart explaining the change you made. (Hint: one of the earlier tasks may help you determine what to change.)
 
 ![Plot of new cases by state in New England](/images/hw4-plot.png)
