@@ -30,6 +30,11 @@ metadata <- read_csv("data/ACSDT1Y2019.B02001_metadata_2020-10-09T060941.csv",
 ```
 ```{r work with transaction data}
 
-transactions <- read_csv("data/transaction_dates.csv")
+transactions <- read_csv("data/transaction_dates.csv") %>% 
+  mutate(sale_date = ymd(as.character(`SALE DATE`)),
+         sale_datetime_string =  str_c(`SALE DATE`, Hour, Minute, Second, sep = " "),
+         sale_datetime = ymd_hms(sale_datetime_string),
+         year = year(sale_date),
+         month = month(sale_datetime))
 ```
 
