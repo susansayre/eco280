@@ -1,6 +1,6 @@
 ---
 date: "2020-01-28T00:36:14+09:00"
-title: HW 4 - Data wrangling
+title: HW 5 - Strings and dates
 output: 
   md_document:
     preserve_yaml: true
