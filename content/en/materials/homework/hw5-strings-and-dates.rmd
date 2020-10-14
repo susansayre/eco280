@@ -1,0 +1,82 @@
+---
+date: "2020-01-28T00:36:14+09:00"
+title: HW 4 - Data wrangling
+output: 
+  md_document:
+    preserve_yaml: true
+    pandoc_args: ["--wrap=preserve"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(here)
+
+```
+
+# Submission details
+
+- Click here to [accept the assignment](https://classroom.github.com/a/1iAQMOnr) on GitHub classroom
+- Commit and **push** working code to your github repo by 10:45am EST on Wed 10/21
+
+# Learning objectives
+
+This homework is designed to give you practice working with string and date variables. We have seen some of these tasks in our earlier work but will focus exclusively on these today.
+
+We will use the `lubridate` and `stringr` packages in R. The `stringr` package is considered a core part of the tidyverse and is loaded whenever tidyverse is loaded but the `lubridate` package needs to be loaded separately using a library command.
+
+We will work with two separate datasets. With the first dataset, we will focus primarily on manipulating string variables to construct measures of interest. For the second, we will work with dates more.
+
+Both sets of tasks should be completed in both R and Stata.
+
+## Re-organize census data
+
+For this task, you will begin by downloading data on the racial demographics of US metropolitan and micropolitan areas. To find this data, go to [data.census.gov](https://data.census.gov/cedsci/) and search for race. Select the second table on the list, which says
+```
+RACE
+Survey/Program: American Community Survey
+Universe: Total population
+TableID: B02001
+```
+
+Click the "Customize Table" button and choose `Geographies`. Scroll down until you see Metropolitan Statistical Area/Micropolitan Statistical Area. Select this and then click the box that says "All Metropolitan Statistical Areas/Micropolitan Statistical Areas within United States". Click Close and the choose Download. Leave the default options checked (1 year 2019) and download the resulting file to the data directory of your assignment repo. Unzip the file. (Note: As long as you don't change the data itself, you *are* allowed to change the file names.)
+
+Read the data into your program and then use a combination of string functions to generate a table that looks like the one below. You should remove any rows for which data is not available. (Note: the reason some rows do not have data is that demographic estimates are not generated annually for some of the smaller regions). Generating this table will require you to change the data type of several variables and to extract parts of the string variables. There is no single correct set up steps to get from beginning to end. It is likely that you will find it helpful to create some intermediate variables that you will ultimately drop.
+
+```{r create census data table, echo = F, message = F}
+census_data <- read_csv(file.path(here(),"content/en/materials/homework/hw5/data/ACSDT1Y2019.B02001_data_with_overlays_2020-10-09T060941.csv")) %>% 
+  filter(GEO_ID != "id") %>% 
+  mutate(cbsa_code = substr(GEO_ID,10,14),
+         area_type = case_when(str_detect(NAME, "Micro Area") ~ "Micro",
+                               str_detect(NAME, "Metro Area") ~ "Metro"),
+         short_name = str_remove(str_remove(NAME, " Micro Area"), " Metro Area")) %>% 
+  separate(short_name, into = c("cities", "states"), sep = ", ") %>% 
+  select(cbsa_code, area_type, cities, states, 
+         population = B02001_001E,
+         white = B02001_002E,
+         black = B02001_003E,
+         asian = B02001_005E) %>% 
+  filter(population != "null") %>% 
+  mutate(population = as.numeric(population),
+         white = as.numeric(white),
+         black = as.numeric(black),
+         asian = as.numeric(asian),
+         percent_white = white/population,
+         percent_black = black/population,
+         percent_asian = asian/population) %>% 
+  select(-population, -white, -black, -asian)
+
+census_data
+
+```
+
+Once you've created the table, look at the six regions with the highest percentage of each of the demographic groups. (Look back at last week to see how to get the first six observations. What do you need to do to make sure the first six are the ones you want?) Are these consistent with what you would have expected? 
+
+## Identify bike use patterns
+
+A Boston bike share company (BlueBikes) has made its bike use data publicly available. Visit their [data archive](https://s3.amazonaws.com/hubway-data/index.html) and download the data for July 2020. Using this data, answer the following questions:
+
+1. Which day of the week sees the most rentals on average?
+2. Is this the same as the day that sees the longest total minutes of riding on average?
+3. Graph the average number of trips starting in each hour of the day. Construct separate graphs for weekdays and weekends. What do you notice about the pattern?
+4. How many bikes were rented at a station whose name includes the word "Harvard"? How many were returned to a station whose name includes the word "MIT"?
