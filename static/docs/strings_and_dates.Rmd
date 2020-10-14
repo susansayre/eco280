@@ -1,0 +1,35 @@
+---
+title: "Strings and Dates 10/14"
+author: "Susan Sayre"
+date: "10/14/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(lubridate)
+```
+
+```{r read in metadata}
+metadata <- read_csv("data/ACSDT1Y2019.B02001_metadata_2020-10-09T060941.csv", 
+                     col_names = c("variable_name", "variable_description"),
+                     skip = 2) %>% 
+  mutate(last_char = substr(variable_name,11,11),
+         variable_type = ifelse(last_char == "E", "Estimate", "MOE"),
+         var_type = case_when(last_char == "E" ~ "Estimate",
+                              last_char == "M" ~ "MOE"),
+         orig_description = variable_description) %>% 
+  separate(variable_description, into = c("type","total","race","race_detail"), sep ="!!") %>% 
+  mutate(type3 = str_detect(orig_description, "Estimate"),
+         modified_description = str_replace(orig_description, "Margin of Error", "MOE"),
+         mod2 = str_remove(orig_description, "Total:"),
+         combo = str_c(last_char, variable_type, sep = " = ")) 
+
+
+```
+```{r work with transaction data}
+
+transactions <- read_csv("data/transaction_dates.csv")
+```
+
