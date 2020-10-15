@@ -152,6 +152,8 @@ Fall Break
 - Overview of replication paper assignment
 - Live coding: strings and dates tasks
 - Description of HW 5: Strings and dates
+- [Link to activity page](/materials/activities/String-dates) (includes links to completed code and video of completing the tasks in Stata)
+- [Slack post with class recording link]https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1602701266000800
 
 ### Week 8 (10/19 - 10/23)
 
