@@ -16,7 +16,7 @@ library(here)
 
 # Submission details
 
-- Click here to [accept the assignment](https://classroom.github.com/a/1iAQMOnr) on GitHub classroom
+- Click here to [accept the assignment](https://classroom.github.com/a/hvTcQDmh) on GitHub classroom
 - Commit and **push** working code to your github repo by 10:45am EST on Wed 10/21
 
 # Learning objectives
