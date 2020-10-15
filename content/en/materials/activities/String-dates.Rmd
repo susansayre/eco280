@@ -16,3 +16,5 @@ In class today, we will be working with string and date functions using two exam
 Please create a folder on your computer for this activity and download these two files to a data folder inside your project folder.
 
 For reference, you can download the [code created during class](/docs/strings_and_dates.Rmd) today to compare with your own work.
+
+This [Panopto video](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0358738c-1707-4de2-9f35-ac550121c2e6) demonstrates completion of the same tasks in Stata. You can also download the [Stata code](/docs/strings_and_dates.do) created in this video.

@@ -25,8 +25,6 @@ metadata <- read_csv("data/ACSDT1Y2019.B02001_metadata_2020-10-09T060941.csv",
          modified_description = str_replace(orig_description, "Margin of Error", "MOE"),
          mod2 = str_remove(orig_description, "Total:"),
          combo = str_c(last_char, variable_type, sep = " = ")) 
-
-
 ```
 ```{r work with transaction data}
 
