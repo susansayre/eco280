@@ -80,3 +80,12 @@ A Boston bike share company (BlueBikes) has made its bike use data publicly avai
 2. Is this the same as the day that sees the longest total minutes of riding on average?
 3. Graph the average number of trips starting in each hour of the day. Construct separate graphs for weekdays and weekends. What do you notice about the pattern?
 4. How many bikes were rented at a station whose name includes the word "Harvard"? How many were returned to a station whose name includes the word "MIT"?
+
+## Resources
+
+If you're having trouble figuring how to do a specific task, the following help links may be useful:
+
+- [String functions in Stata](https://www.stata.com/manuals/fnstringfunctions.pdf)
+- [stringr package cheat sheet](https://github.com/rstudio/cheatsheets/raw/master/strings.pdf) for working with strings in R
+- [Working with dates in Stata](https://www.stata.com/manuals13/u24.pdf)
+- [lubridate package cheat sheet](https://github.com/rstudio/cheatsheets/raw/master/lubridate.pdf) for working with dates in R
