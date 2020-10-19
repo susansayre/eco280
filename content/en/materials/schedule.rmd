@@ -10,24 +10,20 @@ output:
     pandoc_args: ["--wrap=preserve"]
 ---
 
-Section 1: Economic Literature
-------------------------------
+## Section 1: Economic Literature
 
 In the first part of the course, we will spend our Monday class sessions learning/reviewing the three software tools we will use in this class: R, Stata, and Git and our Wednesday class sessions focused on searching, reading, and writing about the economic literature. Weekly computer homework exercises will be handed out each Monday and will be due the following Monday. During this phase of the course, each student will write a synthetic review of the economic literature on a topic of your choosing.
 
 ### Week 1 (8/31 - 9/4)
-
 Course Intro and Software Setup
 
 #### Wed 9/2
-
 Introduction to class
 
 ### Week 2 (9/7 - 9/11)
-
 Searching the literature/Git
 
-#### Mon 9/7
+#### Mon 9/7 
 
 [Slack post with recording link](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1599072200000700)
 
@@ -41,11 +37,11 @@ Searching the literature/Git
 
 **Read** [Almond, D. (2018). Childhood circumstances and adult outcomes: Act II. *Journal of Economic Literature*, 56(4), 1360.](http://sfxhosted.exlibrisgroup.com/smith?sid=google&auinit=D&aulast=Almond&atitle=Childhood%20circumstances%20and%20adult%20outcomes%3A%20Act%20II&title=Journal%20of%20Economic%20Literature&volume=56&issue=4&date=2018&spage=1360&issn=0022-0515)
 
-**Discussion** Paper structure, how the authors engage with other economimc literature. Pay close attention to how they organized the papers they discuss, what they tell us about each paper, and the language they use in discussing the papers.
+**Discussion**  Paper structure, how the authors engage with other economimc literature. Pay close attention to how they organized the papers they discuss, what they tell us about each paper, and the language they use in discussing the papers.
 
 **Activity** Searching the literature in a group
 
-Since we didn’t get a chance to watch them in class, the links to two short videos on how to search using EconLit and Google Scholar are in [this Slack post](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1599593970002200)
+Since we didn't get a chance to watch them in class, the links to two short videos on how to search using EconLit and Google Scholar are in [this Slack post](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1599593970002200)
 
 ### Week 3 (9/14 - 9/18)
 
@@ -57,20 +53,20 @@ Summarizing economic papers, workflow
 
 **Prepare**
 
--   Watch this short video containing [recommendations for storing and naming files](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9c08ada0-da26-400b-b359-ac320015f583)
+- Watch this short video containing [recommendations for storing and naming files](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9c08ada0-da26-400b-b359-ac320015f583)
 
--   If you’re new to R and RStudio:
+- If you're new to R and RStudio: 
 
-    – Read through the three [BasicsBasics](https://rladiessydney.org/courses/ryouwithme/01-basicbasics-0/) sections from R-Ladies Sydney’s [RYouWithMe](https://rladiessydney.org/courses/ryouwithme/)
+    -- Read through the three [BasicsBasics](https://rladiessydney.org/courses/ryouwithme/01-basicbasics-0/) sections from R-Ladies Sydney's [RYouWithMe](https://rladiessydney.org/courses/ryouwithme/)
 
-    – Read the [first section of the RYouWithMe MarkyMark tutorial on RMarkdown](https://rladiessydney.org/courses/ryouwithme/04-markymark-1/)
+    -- Read the [first section of the RYouWithMe MarkyMark tutorial on RMarkdown](https://rladiessydney.org/courses/ryouwithme/04-markymark-1/)
 
--   If you’re new to Stata:
+- If you're new to Stata:
 
-    – Read through the [Introduction to Germán Rodríguez’s Stata Tutorial](https://data.princeton.edu/stata)
+    -- Read through the [Introduction to Germán Rodríguez's Stata Tutorial](https://data.princeton.edu/stata)
 
 **Activity in class** Begin work on [HW 2](/materials/homework/hw2-regressions-w-code)
-
+        
 #### Wed 9/16
 
 **Submit** an RMarkdown document to your lit-review repo describing your search of the literature on a topic of your choosing. You should describe the process you followed and include a list of at least five papers. The papers should represent different phases of your literature search (that is, you should not simply report the first five papers that come up when you enter a search term). For each paper, include a complete citation in APA format and a brief assessment of the journal (or other location) in which the paper appears. You do *not* need to summarize the papers themselves.
@@ -107,15 +103,15 @@ Classifying the literature
 
 #### Wed 9/30
 
-**Topic:** Data wrangling tasks
+**Topic:** Data wrangling tasks 
 
-We will discuss five core data wrangling tasks:
+We will discuss five core data wrangling tasks: 
 
--   selecting/dropping/renaming variables
--   sorting data
--   subsetting data
--   creating new variables
--   computing summary statistics (overall or by group)
+- selecting/dropping/renaming variables
+- sorting data
+- subsetting data
+- creating new variables
+- computing summary statistics (overall or by group)
 
 I will briefly describe how to accomplish each task in R and in Stata and will introduce HW 4, which will give you practice doing these tasks.
 
@@ -126,9 +122,9 @@ Videos:
 - [Panopto to link to video of completing tasks in Stata](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d7100189-3e57-435d-a6d3-ac4700f09c7b)
 - [Panopto to link to cleaner video of completing tasks in R](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ab2f99e6-a8d3-4259-95e1-ac47011fa3aa)
 
-Note: These videos include a bunch of talking and aren’t necessarily the most efficient way to see how to accomplish the tasks in Stata. I tried to give you a flavor of how I proceed while developing a program in Stata so I left in a few places where I used the wrong function and explicitly demonstrated a few mistakes and how I check to see if the code is working the way I want. My recommendation is to watch the video at an increased speed and then slow down for the specific parts you’re interested in. The two Panopto videos have a rough table of contents to help you find various sections.
+Note: These videos include a bunch of talking and aren't necessarily the most efficient way to see how to accomplish the tasks in Stata. I tried to give you a flavor of how I proceed while developing a program in Stata so I left in a few places where I used the wrong function and explicitly demonstrated a few mistakes and how I check to see if the code is working the way I want. My recommendation is to watch the video at an increased speed and then slow down for the specific parts you're interested in. The two Panopto videos have a rough table of contents to help you find various sections.
 
-### Week 6 (10/5 - 10/9)
+### Week 6 (10/5 - 10/9) 
 
 [Literature review](/materials/papers/lit-review) due next Wed 10/14
 
@@ -144,8 +140,7 @@ HW 4 work/help session
 
 **HW 4 due Thurs 10/8 at 9am EST**
 
-Section 2: Reproducible research
---------------------------------
+## Section 2: Reproducible research
 
 In this part of the course, we focus on developing good practices for reproducible research. You work will consist of a mix of homework exercises and interim progress checkpoints on your group project to reproduce the analysis in an existing economic journal article. I will provide a list of suggested articles to reproduce.
 
@@ -168,8 +163,8 @@ Fall Break
 
 #### Mon 10/19
 
--   Questions/discussion of finding papers to replicate
--   HW 5 work/help session
+- Questions/discussion of finding papers to replicate
+- HW 5 work/help session
 
 #### Wed 10/21
 
@@ -197,20 +192,19 @@ Fall Break
 
 #### Mon 11/2
 
--   **Submit** data and import code to group replication repo
--   HW 7 work/help session
+- **Submit** data and import code to group replication repo
+- HW 7 work/help session
 
 #### Wed 11/4
 
--   **Submit** HW 7
--   Discussion of project process, questions, and troubleshooting
--   Introduction to advanced regression and tables
--   Description of HW 8: Advanced regression and tables
+- **Submit** HW 7
+- Discussion of project process, questions, and troubleshooting
+- Introduction to advanced regression and tables
+- Description of HW 8: Advanced regression and tables
 
 ### Week 11 (11/9 - 11/13)
 
 #### Mon 11/9
-
 HW 8 and/or project work/help
 
 #### Wed 11/11
@@ -218,10 +212,9 @@ HW 8 and/or project work/help
 **Submit** HW 8
 Project work/help session
 
-Section 3: Understanding your data
-----------------------------------
+## Section 3: Understanding your data
 
-In this part of the course, we will focus on data exploration. The course will focus on data tasks you are familiar with from other courses but will emphasize using these summary measures to understand what’s happening in your data. During this phase of the course, you will have several relatively short homework exercises, but will spend most of your time working on understanding a dataset of your own choosing.
+In this part of the course, we will focus on data exploration. The course will focus on data tasks you are familiar with from other courses but will emphasize using these summary measures to understand what's happening in your data. During this phase of the course, you will have several relatively short homework exercises, but will spend most of your time working on understanding a dataset of your own choosing. 
 
 ### Week 12 (11/16 - 11/19)
 
@@ -247,7 +240,7 @@ HW 9 work/help session
 #### Wed 11/24
 
 *Thanksgiving Break*
-
+    
 ### Week 14 (11/30 - 12/4)
 
 #### Mon 11/30
@@ -264,7 +257,6 @@ HW 10 work/help session
 ### Week 15 (12/7 - 12/11)
 
 #### Mon 12/7
-
 HW 11 work/help session
 
 #### Wed 12/9
