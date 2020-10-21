@@ -46,22 +46,23 @@ You can do this in R by using a special form of the summarize function `summariz
 In Stata, you'll use the regular `collapse (sum) varlist, by(grouping_vars separated by spaces)` syntax but since you have so many variables to sum across, you can use `value*` as a shorthand for any variable that begins with value. (See [variable lists in Stata](https://www.stata.com/support/faqs/data-management/shortcuts-to-refer-multiple-variables/) for other examples of ways to get lists of variables without typing all the names).
 
 ## Pivot or reshape your data to get a long format
-Once we've taken care of the totals, your next task is to reorganize the data to generate a table that has the three identifying variables (utility_name, state, part), a column called something like sector_datatype whose values will be the names of the sector_variable type columns, and a final column containing the values.
+Once we've taken care of the totals, your next task is to reorganize the data to generate a table that has the three identifying variables (utility_name, state, part), a column called something like sector_datatype whose values will be the names of the sector_variable type columns (e.g. `residential_revenue`, `commercial_sales`, etc.), and a final column containing the values.
 
 In R, you'll be using a `pivot_longer` statement, while in Stata you'll use `reshape long`. Note that since Stata requires all the variables you're turning into observations to share a common "stub", the Stata import command put the prefix `value_` in front of all these variables. Moreover, since the names that come after the value_ "stub" aren't numeric, you need to include the option `string` at the end of your reshape command.
 
 ## Pivot/reshape back to separate sector from data type
-The representation at the end of the previous step doesn't really work either though, because now we have different variables (revenues, sales, customers) showing up as different observations. To fix this, we need to use string functions to separate our newly constructed column containing the old variable names into pieces for the sector (residential, industrial, etc) and the data type (revenues, sales, customers). Once we have the data that way, we can go back to a wide format. Ultimately, we want columns for utility_name, state, part, sector, revenues, sales, and customers.
+
+The format of the data at the end of the previous step doesn't really work either though, because now we have different variables (revenues, sales, customers) showing up as different observations. To fix this, we need to use string functions to separate our newly constructed column containing the old variable names into pieces for the sector (residential, industrial, etc) and the data type (revenues, sales, customers). Once we have the data that way, we can go back to a wide format. Ultimately, we want columns for utility_name, state, part, sector, revenues, sales, and customers.
 
 In R, you'll use `pivot_wider` while in Stata, you'll use `reshape wide`. Note that you'll need the string option again in Stata.
 
 ## Compute state totals for revenues, sales, and customers
 
-Before computing the totals, we want to address the fact that our `part == "C"` observations should not be counted in our totals for sales or customers (but should be counted for revenues). There are a couple ways to handle this. You could go back to the part of the code where you data is in long format and drop some rows or you could replace some of the values with 0 while your data is in either long or wide format.
+Before computing the totals, we want to address the fact that our `part == "C"` observations should not be counted in our totals for sales or customers (but should be counted for revenues). There are a couple ways to handle this. You could go back to the part of the code where your data is in long format and drop some rows or you could replace some of the values with 0 while your data is in either long or wide format.
 
 Once you've addressed this complication, you should compute state/sector level totals for revenues, sales, and customers leaving you with a table with five columns: state, sector, revenues, sales, and customers.
 
-You're now ready to get your population data ready to merge with the electricity data. In Stata, you'll need to save this dataset so you can load a new one. Do this by typing `save electricity_data, replace`. This will save your current data in a file called `electricity_data.dta`. The replace option means that the data will be overwritten when you re-run the code.
+You're now ready to get your population data ready to merge with the electricity data. In Stata, you'll need to save the dataset you've just created so you can load a new one. Do this by typing `save electricity_data, replace`. This will save your current data in a file called `electricity_data.dta`. The replace option means that the data will be overwritten when you re-run the code.
 
 ## Prepare the population data
 
@@ -106,7 +107,7 @@ ggplot(dataset, aes(x_var,y_var)) + geom_col(aes(fill = cat_var))
 
 ```
 
-where x_var is the (categorical) variable that identifies the bar, y_var tells us about the height of the bar, and cat_var is a second categorical variable identifying the different sections of the bars. If your plot is too hard to read, you can make it wider by using the option `fig.width` in the title row of your R chunk. (The brackets will look like: `{r chunk name, fig.width = 8}`) Adjust the width number until you're happy with the output.
+where `x_var` is the (categorical) variable that identifies the bar, `y_var` tells us about the height of the bar, and `cat_var` is a second categorical variable identifying the different sections of the bars. If your plot is too hard to read, you can make it wider by using the option `fig.width` in the title row of your R chunk. (The brackets will look like: `{r chunk name, fig.width = 8}`) Adjust the width number until you're happy with the output.
 
 A side note: ggplot's defaults for axes are often not great with economic data. Negative values wouldn't make a lot of sense here. Forcing ggplot to start at the origin is less straightforward than I would like. One way to accomplish it is to end your regular ggplot line with a `+` and add the line:
 ```
