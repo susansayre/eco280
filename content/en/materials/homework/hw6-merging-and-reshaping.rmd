@@ -1,6 +1,6 @@
 ---
 date: "2020-01-28T00:36:14+09:00"
-title: HW 5 - Strings and dates
+title: HW 6 - Merging and Reshaping
 output: 
   md_document:
     preserve_yaml: true
