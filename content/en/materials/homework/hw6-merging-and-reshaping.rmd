@@ -123,6 +123,13 @@ For Stata, the basic code for a stacked bar chart (with vertical category labels
 graph bar (asis) y_var, over(cat_var) over(x_var, label(angle(vertical))) asyvars stack
 ```
 
-with the variables defined as in the R section. Note that the `asyvars` option is what tells Stata to treat the cat_var as differently filled sections and the `stack` options tells Stata to stack the choices (eliminating it would get you a grouped bar chart). You can control the width of the Stata graph by adding `xsize(#)` at the end of the command.
+with the variables defined as in the R section. 
+
+Three notes:
+
+1. The `asyvars` option is what tells Stata to treat the cat_var as differently filled sections and the `stack` options tells Stata to stack the choices (eliminating it would get you a grouped bar chart). 
+2. You can control the width of the Stata graph by adding `xsize(#)` at the end of the command.
+3. If you still have a _merge variable in your data, you'll have to drop it because Stata runs a merge command in the background while generating the graph.
+
 
 If you use Stata, be sure to save your graph as .png file and push the graph to github as well.
