@@ -1,0 +1,49 @@
+---
+title: "Merging example"
+author: "Susan Sayre"
+date: "10/21/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+```{r import our two datasets and prepare for merging}
+sales_data <- read_csv("data/sales_data.csv")
+team_info <- read_csv("data/team_info.csv")
+
+```
+```{r merge with full join}
+
+full_data <- sales_data %>% 
+  full_join(team_info, by = c("team_name" = "sales_team"))
+
+```
+
+```{r merge with left join}
+
+left_data <- sales_data %>% 
+  left_join(team_info, by = c("team_name" = "sales_team"))
+
+```
+
+```{r merge with right join}
+
+right_data <- sales_data %>% 
+  right_join(team_info, by = c("team_name" = "sales_team"))
+
+```
+
+```{r merge with inner join}
+inner_data <- sales_data %>% 
+  inner_join(team_info, by = c("team_name" = "sales_team")) %>% 
+  group_by(team_name, num_team_members) %>% 
+  summarize(total_sales = sum(sale_total)) %>% 
+  mutate(average_sales_pp = total_sales/num_team_members)
+
+```
+
+
+

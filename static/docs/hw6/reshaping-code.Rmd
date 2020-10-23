@@ -1,0 +1,37 @@
+---
+title: "Reshaping example"
+author: "Susan Sayre"
+date: "10/21/2020"
+output: html_document
+---
+
+This example uses both the core tidyverse packages and the `readxl` package that is installed when tidyverse is installed but is not loaded explicitly. Instead of loading the readxl package, we will demonstrate calling the functions with the :: notation.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+```{r import and reshape population data}
+
+population_wide <- readxl::read_xlsx("data/nst-est2019-01.xlsx",
+                                     range = "A4:M62") %>% 
+  rename(state_name = `...1`)
+
+population_long <- population_wide %>% 
+  select(-Census, -`Estimates Base`) %>% 
+  pivot_longer(-state_name,
+               names_to = "year",
+               values_to = "population")
+
+population_wide2 <- population_long %>% 
+  pivot_wider(id_cols = state_name,
+              names_from = year,
+              names_prefix = "population",
+              values_from = "population") %>% 
+  mutate(state_name = str_remove(state_name, "\\."))
+
+#Note: the line above shows how to "escape" the . character so that str_remove removes the first period instead of the first character
+
+```
+
