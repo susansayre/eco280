@@ -12,7 +12,7 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
-library(vtable)
+library(modelsummary)
 library(palmerpenguins)
 ```
 
@@ -38,17 +38,17 @@ Categorical variables in your data come in two different types: ones with "a few
 
 ### R
 
-#### Base R
-
 #### Manually using tidyverse summarize
+
+All of the summary statistics we might want to look at can be manually computed via tidyverse. This works well for numeric variables and is kind of a pain for categorical variables since you have to run each computation manually (or do some fancy re-arranging of your data with pivot_longer). Given this and the importance of summary statistics, there are several packages that make nice summary statistic tables. 
 
 #### Using the vtable package
 
-My favorite R package for creating summary statistic tables is Nick Huntington-Klein's `vtable` package. As he says "if you want the kind of table sumtable() produces (and I think a lot of you do!) then it’s perfect and easy." I find that it is rare that this package **doesn't** give me what I'm looking for. It is simple, fast, and usually does what you want. There are options to customize many things (although possibly not everything you might want). Here's a basic example:
+A simple lightweigt R package for creating summary statistic tables is Nick Huntington-Klein's `vtable` package. As he says "if you want the kind of table sumtable() produces (and I think a lot of you do!) then it’s perfect and easy." I find that it is rare that this package **doesn't** give me what I'm looking for. It is simple, fast, and usually does what you want. There are options to customize many things (although possibly not everything you might want). Here's a basic example:
 
 ```{r simple sum stat table}
 
-vtable::st(palmerpenguins::penguins)
+st(penguins)
 
 ```
 
@@ -58,7 +58,7 @@ With a couple more lines of code, I could move the numeric variables to the top 
 
 palmerpenguins::penguins %>% 
   relocate(where(is.numeric)) %>% 
-  vtable::st()
+  st()
 
 ```
 
@@ -72,7 +72,20 @@ penguins %>%
 
 ```
 
+#### Using the modelsummary package
 
-#### Using the dfSummary package
+While I find `vtable` to be a great quick package, the modelsummary package offers more options and is also useful for summarizing regression output.
 
-While I find `vtable` to be the best package for creating publication quality summary statistic tables, for understanding my dataset, I'm also a big fan of the `dfSummary` package. 
+To get a quick summary of the numeric data, we use datasummary_skim().
+
+```{r}
+datasummary_skim(penguins)
+```
+
+```{r}
+datasummary_skim(penguins, type = "categorical")
+```
+
+### Stata
+
+While it is definitely possible to write nice summary statistics. 
