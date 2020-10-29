@@ -12,7 +12,7 @@ title: HW 7 - Summary stats and regressions
 
 ## Task summmary
 
-Accept the assignment repo on github. The repo contains the data and a more detailed description of the tasks.
+Accept the [assignment repo](https://classroom.github.com/a/wCy2XNw0) on github. The repo contains the data and a more detailed description of the tasks.
 
 There are four tasks to this assignment:
 
