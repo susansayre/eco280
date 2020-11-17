@@ -1,0 +1,95 @@
+---
+title: "Using the Census API"
+author: "Susan Sayre"
+weight: 8
+output: 
+  md_document:
+    preserve_yaml: true
+    pandoc_args: ["--wrap=preserve"]
+---
+
+## General information
+
+The US Census Bureau provides API acccess to most of its datasets. You can view the [available APIs](https://www.census.gov/data/developers/data-sets.html) on the Census Bureau website. By clicking on a specific dataset, you can access detailed documentation about how to use that API. For instance, the [acs5 example page](https://api.census.gov/data/2018/acs/acs5/examples.html) shows the URLs to fetch total population for all the different geographic levels that are available in the ACS 5 year estimate files.
+
+## R
+
+In R, the `tidycensus` package makes working with census data much easier. You can install this package by running
+
+```
+install.package("tidycensus")
+```
+
+in your console.
+
+Once the package is installed, you can use the `load_variables` function to get a searchable list of variables you can use to help identify the code for the data you are interested in. 
+
+```
+library(tidycensus)
+
+acs_vars <- load_variables("acs5", year = 2018, cache = T)
+
+race_acs_vars <- acs_vars %>% filter(concept == "RACE")
+```
+
+You can also explore on the data.census.gov page to find the name of the variable you're looking for. Once you know the name of the variable or table, you want to fetch, use the `get_acs` function (or the appropriate function for the dataset you are interested.)
+
+The three commands below will all fetch the total_population and black_population examples we used in class. The first one fetches only those two variables. The second one fetches all variables in the table B02001. The third one fetches all the variables listed in the race_acs_vars table above.
+
+```
+
+acs_specific_vars <- get_acs("county", 
+                             variables = c("B02001_001E", "B02001_003E"),
+                             year = 2018,
+                             output = "wide")
+
+acs_full_table <- get_acs("county", 
+                          table = "B02001",
+                          year = 2018,
+                          output = "wide")
+
+acs_from_var_list <- get_acs("county", 
+                             variables = race_acs_vars$name,
+                             year = 2018,
+                             output = "wide")
+```
+ 
+## Stata
+
+The censusapi Stata package helps us interact with the Census API in Stata. It is less polished than the R version but still helpful. To install it, run
+
+```
+ssc install censusapi
+```
+
+in a Stata session. 
+
+Once the package is installed, you can use the censusapi command to extract information. The correct example to extract race data for every county is
+
+```
+censusapi, dataset("https://api.census.gov/data/2018/acs/acs5") variables("B02001_001E" "B02001_003E") predicate("for=county:*") destination("county.txt")
+
+rename B02001_001E total_population
+rename B02001_003E black_population
+```
+
+The first time you use the command after installing the package, you need to supply your key and save it by adding the `key("yourkey")` and `savekey` options at the end of your command. *You only need to do this once.*
+
+*__(Optional)__ Suppress printing of your api key:* Note that the package will print your api key in your Stata log every time you run a command. If you intend to share your Stata logs, I recommend changing the package code to overwrite this behavior. To do this, locate the `censusapi.ado` file on your computer. When you install packages in Stata, the code to provide the commands is downloaded and stored in a specific folder on your computer. To find this folder, open Stata and type `sysdir` in the console. You should get output that looks something like this:
+
+```
+. sysdir
+   STATA:  C:\Program Files (x86)\Stata15\
+    BASE:  C:\Program Files (x86)\Stata15\ado\base\
+    SITE:  C:\Program Files (x86)\Stata15\ado\site\
+    PLUS:  c:\ado\plus\
+PERSONAL:  c:\ado\personal\
+OLDPLACE:  c:\ado\
+
+```
+
+The installed packages are found with the the PLUS directory in folders organized by the first letter of the command. So on my machine and most other PCs, the censusapi file is `C:/ado/plus/c/censusapi.ado'. 
+
+Open this file in a text editor (or type `doedit path/to/your/ado/plus_directory/c/censusapi.ado`) and search for the phrase "Using stored key". When you find it, delete everything else inside the quotation marks after that phrase. When you're done, the line should end with just "Using stored key". Save the file, close Stata, and restart.
+
+*Note:* If you ever lose it, your census api key will be stored as a global variable in `path\to\your\personal\ado\directory\profile.do`.

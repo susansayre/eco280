@@ -1,7 +1,7 @@
 ---
 title: "Strings and dates"
 author: "Susan Sayre"
-date: "10/14/2020"
+weight: 4
 output: 
   md_document:
     preserve_yaml: true

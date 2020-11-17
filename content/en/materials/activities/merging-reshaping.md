@@ -1,7 +1,7 @@
 ---
 title: "Reshaping and merging data"
 author: "Susan Sayre"
-date: "10/21/2020"
+weight: 3
 output: 
   md_document:
     preserve_yaml: true
