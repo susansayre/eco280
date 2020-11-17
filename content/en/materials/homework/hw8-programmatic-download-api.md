@@ -10,7 +10,7 @@ title: HW 8 - Programmatic data downloads and APIs
 - The assignment should be completed in either R or Stata, but you do *not* need to do it in both programs.
 
 ## Task summmary
-Accept the [assignment repo](link) on github. There are two distinct and unrelated tasks to this assignment.
+Accept the [assignment repo](https://classroom.github.com/a/rQ5ViSlz) on github. There are two distinct and unrelated tasks to this assignment.
 
 1. Revisit the Blue Bikes data we used earlier this semester. Write a short program to download all the data for 2015 through 2017 and combine it into a single file. Use this data to construct two graphs showing the total number of rides and the total duration of rides for each day throughout the entire time period. A couple notes:
 
