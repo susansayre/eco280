@@ -8,6 +8,8 @@ output:
     pandoc_args: ["--wrap=preserve"]
 ---
 
+This page includes information and code related to the activities demonstrated in class on 11/16/20. The recording is available from this [Slack post](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1605555928000600). 
+
 ## General information
 
 The US Census Bureau provides API acccess to most of its datasets. You can view the [available APIs](https://www.census.gov/data/developers/data-sets.html) on the Census Bureau website. By clicking on a specific dataset, you can access detailed documentation about how to use that API. For instance, the [acs5 example page](https://api.census.gov/data/2018/acs/acs5/examples.html) shows the URLs to fetch total population for all the different geographic levels that are available in the ACS 5 year estimate files.
