@@ -6,13 +6,13 @@ title: HW 8 - Programmatic data downloads and APIs
 
 ## Submission details
 
-- Commit and **push** working code and your output files to your github repo by 11:55pm EST on Mon Nov 24
+- Commit and **push** working code and your output files to your github repo by 11:55pm EST on Tues Nov 24. (Note that I will **not** have office hours on Tuesday evening but will have my regular Sunday office hours.)
 - The assignment should be completed in either R or Stata, but you do *not* need to do it in both programs.
 
 ## Task summmary
 Accept the [assignment repo](https://classroom.github.com/a/rQ5ViSlz) on github. There are two distinct and unrelated tasks to this assignment.
 
-1. Revisit the Blue Bikes data we used earlier this semester. Write a short program to download all the data for 2015 through 2017 and combine it into a single file. Use this data to construct two graphs showing the total number of rides and the total duration of rides for each day throughout the entire time period. A couple notes:
+1. Revisit the [Blue Bikes data](https://www.bluebikes.com/system-data) we used earlier this semester. Write a short program to download all the data for 2015 through 2017 and combine it into a single file. Use this data to construct two graphs showing the total number of rides and the total duration of rides for each day throughout the entire time period. A couple notes:
 
     - We are stopping at the end of 2017 because the file naming convention changed twice during 2018. If you were actually using this data for a project, you'd need to write different import functions for the altered name conventions later in the time frame.
 
