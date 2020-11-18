@@ -20,6 +20,6 @@ Accept the [assignment repo](https://classroom.github.com/a/rQ5ViSlz) on github.
 
     - You are likely to run into a problem where R will import the same variable with different data types in different files. When you hit this problem, you can fix it by adding a mutate statement after the read_csv function inside your import function.
     
-2. The second task is entirely separate and asks you to work with the census api. Using the census api, download data on the sex and age of the population by county in 2008 and 2018 using the ACS 5-year estimates. Compute the change over those ten years in the percentage of the population aged 20-29. Note that you will need to combine several of the census variables to compute this total. In R, you may want to explore using either the `wide` or the `tidy` format of the data to see which seems easier to work with. 
+2. The second task is entirely separate and asks you to work with the census api. Using the census api, download data on the sex and age of the population by county in 2008 and 2018 using the ACS 5-year estimates. Compute the change over those ten years in the percentage of the population aged 20-29. Note that you will need to combine several of the census variables to compute this percentage. In R, you may want to explore using either the `wide` or the `tidy` output options to see which organization of the data seems easier to work with. 
 
 Once you've computed the change, construct a histogram showing the distribution of the % change in the population aged 20-29 across counties. 
