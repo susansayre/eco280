@@ -9,9 +9,9 @@ weight: 3
 Working alone or in a pair, you will create and document an analysis of a dataset of your choosing. Your analysis should include a careful description of the dataset and the individual variables, a discussion of the summary statistics of the dataset with a focus on understanding the strengths and weaknesses of the data for answering questions, one or more graphs illustrating the data, and a regression using some or all of the data. You will discuss what the regression can and cannot tell you, but are **not** required to identify a regression technique that allows you to make causal claims about a research question.
 
 Deadlines:
-- Mon 11/30: Push data and import code to project repo. If your dataset is too large to upload to Github, please make sure I know how to download the data and where to store it on my computer.
-- Mon 12/7: Push interim progress update. This can be short but should be a brief update of where you stand on the project and any issues you are encountering. I encourage you to push in progress work to Github.
-- Thurs 12/17: Push final project with working computer code
+- **Mon 11/30: Push data and import code to project repo.** If your dataset is too large to upload to Github, please make sure I know how to download the data and where to store it on my computer.
+- **Mon 12/7: Push interim progress update.** This can be short but should be a brief update of where you stand on the project and any issues you are encountering. I encourage you to push in progress work to Github.
+- **Thurs 12/17: Push final project with working computer code**
 
 ## Assignment Guidelines
 
