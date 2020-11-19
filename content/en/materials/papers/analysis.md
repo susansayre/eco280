@@ -28,7 +28,7 @@ Summarize the key findings of the rest of the paper. In this case, that should i
 
 *Note* The word count for this section is *very* rough. How much writing you will need to do will depend on what you discover in your data analysis. For a clean dataset with no missing values and a relatively small number of variables, you might have a relatively short section, but for messy data, this could be a long section. If you're concerned about how much or little you're writing in this section, feel free to reach out and discuss with me.
 
-In this section, you will describe your dataset in detail -- likely in more detail than would usually be included in the data section of an economics paper. Unless they are irrelevant for your project, you should discuss all of the following topics:
+In this section, you will describe your dataset in detail -- likely in more detail than would usually be included in the data section of an economics paper. You should include the following elements:
 
 - *Data source:* In addition to a precise specification of where you obtained the data, you should also discuss how the data was collected and any implications this may have for analysis of the data.
 
@@ -36,7 +36,7 @@ In this section, you will describe your dataset in detail -- likely in more deta
 
 - *Summary statistics:* Include a table of summary statistics for every numeric variable in your dataset and discuss the values. Are any of the values surprising? Look at histograms of the data distribution for every numeric variable and consider whether any seem unusual or might have implications for analysis. (You do not need to include the histograms within the paper, although you should include the code to produce them in your repository. For those using R, the histograms created by the `modelsummary::data_summary_skim()` function are sufficient. For categorical variables, either provide a frequency count (if there are a small number of values) within the table or produce one with code and assess whether there are any patterns in the frequencies that are unusual. Discuss patterns of missingness in the data. Do they appear random or might they be indicative of bias? How might the missingness affect conclusions from the analysis.
 
-- *visualization:* Include at least one and preferably several visualizations of part of your dataset. Consider whether you can use faceting, color, or other design elements to look at relationships among several different variables. Describe what we can learn from these visualizations.
+- *Visualization:* Include at least one and preferably several visualizations of part of your dataset. Consider whether you can use faceting, color, or other design elements to look at relationships among several different variables. Describe what we can learn from these visualizations.
 
 ### Regression analysis (200-300 words)
 
