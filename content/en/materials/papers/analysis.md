@@ -15,6 +15,7 @@ Deadlines:
 
 ## Assignment Guidelines
 
+Accept the [assignment on Github](https://classroom.github.com/g/aQCe1TqJ) to create your project repo. Since you have the option to work in pairs, it is set up as a group assignment. If you are working alone, simply enter your name as your team name.
 
 Your completed analysis should have the following sections:
 
