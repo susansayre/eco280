@@ -232,6 +232,7 @@ HW 8 work/help session
 #### Mon 11/23
 
 **Submit** HW 8
+
 - Live coding examples: graphs in R
 - Description of HW 9: Using ggplot
 
@@ -244,13 +245,14 @@ HW 8 work/help session
 #### Mon 11/30
 
 **Submit** dataset for final project via final project repo (or other method arranged in advance for large datasets)
-HW 10 work/help session
+HW 9 work/help session
 
 #### Wed 12/2
 
-**Submit** HW 9
 - Live coding examples: mapping in R using `sf` and `tmap`
 - Description of HW 10: Mapping in R
+
+**Submit HW9 by 5pm EST on Friday, Dec 4.**
 
 ### Week 15 (12/7 - 12/11)
 
