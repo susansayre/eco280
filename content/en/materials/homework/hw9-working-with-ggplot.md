@@ -12,7 +12,9 @@ title: HW 9 - Working with ggplot
 ## Task summmary
 1. Accept the [assignment repo](https://classroom.github.com/a/flhCqGMh) on github.
 
-2. Build up the code to construct a graph that looks like this, following the steps in class. There are several steps:
+2. Download the beginning code from Slack 
+
+3. Build up the code to construct a graph that looks like this, following the steps in class. There are several steps:
 
     a. Plot the new_cases using geom_col.
 	b. Plot the rolling average using geom_line
@@ -30,7 +32,7 @@ title: HW 9 - Working with ggplot
 3. Construct a small multiples graph for county level cases that looks roughly like the state one with the following differences:
 	
 	a. Do not adjust the y-axis tick locations and do not add the word cases.
-	a. Use n.breaks = 3 to reduce the number of breaks on the y-axis.
-	b. Let the y-axis scale vary across the small multiples but keep the light dashed labels
-	b. Only print month labels for every other month.
-	c. Leave out the text and line annotations for 7-day average and New cases
+	b. Use n.breaks = 3 to reduce the number of breaks on the y-axis.
+	c. Let the y-axis scale vary across the small multiples but keep the light dashed labels
+	d. Only print month labels for every other month.
+	e. Leave out the text and line annotations for 7-day average and New cases
