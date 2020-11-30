@@ -34,9 +34,9 @@ Note: the assignment is specific to R and ggplot. If you want to try to replicat
 3. Construct a small multiples graph for county level cases that looks roughly like the state one with the following differences:
 	
     a. Do not adjust the y-axis tick locations and do not add the word cases. Instead, use n.breaks = 3 to reduce the number of breaks on the y-axis. (You'll notice that it may not use exactly 3 breaks because it prioritizes "nice" numbers).
-    c. Let the y-axis scale vary across the small multiples but keep the light dashed grid lines
-    d. Only print month labels for every other month.
-    e. Leave out the text and line annotations for 7-day average and New cases.
-    f. It is up to you whether to include a plot for the cases with "Unknown" county.
+    b. Let the y-axis scale vary across the small multiples but keep the light dashed grid lines
+    c. Only print month labels for every other month.
+    d. Leave out the text and line annotations for 7-day average and New cases.
+    e. It is up to you whether to include a plot for the cases with "Unknown" county.
     
 when you are done, knit your code and commit/push your .Rmd file, your .html file and saved versions of both your state and county graphs (pdf, jpg, png, or eps versions are all fine).
