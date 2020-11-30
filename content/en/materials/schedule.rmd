@@ -14,16 +14,16 @@ output:
 
 In the first part of the course, we will spend our Monday class sessions learning/reviewing the three software tools we will use in this class: R, Stata, and Git and our Wednesday class sessions focused on searching, reading, and writing about the economic literature. Weekly computer homework exercises will be handed out each Monday and will be due the following Monday. During this phase of the course, each student will write a synthetic review of the economic literature on a topic of your choosing.
 
-### Week 1 (8/31 - 9/4)
+#### Week 1 (8/31 - 9/4)
 Course Intro and Software Setup
 
-#### Wed 9/2
+##### Wed 9/2
 Introduction to class
 
-### Week 2 (9/7 - 9/11)
+#### Week 2 (9/7 - 9/11)
 Searching the literature/Git
 
-#### Mon 9/7 
+##### Mon 9/7 
 
 [Slack post with recording link](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1599072200000700)
 
@@ -31,7 +31,7 @@ Searching the literature/Git
 
 **Prepare** by starting [HW 1](/materials/homework/hw1-git-basics). You do **not** need to finish the homework and class will be used for troubleshooting and other questions.
 
-#### Wed 9/9
+##### Wed 9/9
 
 [Slack post with recording link](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1599677137001000)
 
@@ -43,11 +43,11 @@ Searching the literature/Git
 
 Since we didn't get a chance to watch them in class, the links to two short videos on how to search using EconLit and Google Scholar are in [this Slack post](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1599593970002200)
 
-### Week 3 (9/14 - 9/18)
+#### Week 3 (9/14 - 9/18)
 
 Summarizing economic papers, workflow
 
-#### Mon 9/14
+##### Mon 9/14
 
 **Submit** [HW 1](/materials/homework/hw1-git-basics)
 
@@ -67,7 +67,7 @@ Summarizing economic papers, workflow
 
 **Activity in class** Begin work on [HW 2](/materials/homework/hw2-regressions-w-code)
         
-#### Wed 9/16
+##### Wed 9/16
 
 **Submit** an RMarkdown document to your lit-review repo describing your search of the literature on a topic of your choosing. You should describe the process you followed and include a list of at least five papers. The papers should represent different phases of your literature search (that is, you should not simply report the first five papers that come up when you enter a search term). For each paper, include a complete citation in APA format and a brief assessment of the journal (or other location) in which the paper appears. You do *not* need to summarize the papers themselves.
 
@@ -75,11 +75,11 @@ Summarizing economic papers, workflow
 
 **Start** Constructing a summary of your chosen article (due Wed 9/23)
 
-### Week 4 (9/21 - 9/25)
+#### Week 4 (9/21 - 9/25)
 
 Classifying the literature
 
-#### Mon 9/21
+##### Mon 9/21
 
 **Submit** [HW 2](/materials/homework/hw2-regressions-w-code)
 
@@ -87,21 +87,21 @@ Classifying the literature
 
 **Activity in class** begin work on HW 3
 
-#### Wed 9/23
+##### Wed 9/23
 
 **Submit** a summary of one of your articles, following the directions in the [lit review assignment here](/materials/papers/lit-review/#single-article-summary)
 
 **MOUNTAIN DAY!**
 
-### Week 5 (9/28 - 10/2)
+#### Week 5 (9/28 - 10/2)
 
-#### Mon 9/28
+##### Mon 9/28
 
 **Submit** HW 3
 **Activity** Using a [template to organize and classify papers](/materials/activities/Organizing) from your literature search
 [Slack post with recording link](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1601316571000600)
 
-#### Wed 9/30
+##### Wed 9/30
 
 **Topic:** Data wrangling tasks 
 
@@ -124,16 +124,16 @@ Videos:
 
 Note: These videos include a bunch of talking and aren't necessarily the most efficient way to see how to accomplish the tasks in Stata. I tried to give you a flavor of how I proceed while developing a program in Stata so I left in a few places where I used the wrong function and explicitly demonstrated a few mistakes and how I check to see if the code is working the way I want. My recommendation is to watch the video at an increased speed and then slow down for the specific parts you're interested in. The two Panopto videos have a rough table of contents to help you find various sections.
 
-### Week 6 (10/5 - 10/9) 
+#### Week 6 (10/5 - 10/9) 
 
 [Literature review](/materials/papers/lit-review) due next Wed 10/14
 
-#### Mon 10/5
+##### Mon 10/5
 
 Literature Presentations I
 HW 4 work/help session
 
-#### Wed 10/7
+##### Wed 10/7
 
 Literature Presentations II
 HW 4 work/help session
@@ -144,13 +144,13 @@ HW 4 work/help session
 
 In this part of the course, we focus on developing good practices for reproducible research. You work will consist of a mix of homework exercises and interim progress checkpoints on your group project to reproduce the analysis in an existing economic journal article. I will provide a list of suggested articles to reproduce.
 
-### Week 7 (10/12 - 10/16)
+#### Week 7 (10/12 - 10/16)
 
-#### Mon 10/12
+##### Mon 10/12
 
 Fall Break
 
-#### Wed 10/14
+##### Wed 10/14
 
 **Submit** [literature review](/materials/papers/lit-review)
 - Overview of replication paper assignment
@@ -159,54 +159,54 @@ Fall Break
 - [Link to activity page](/materials/activities/String-dates) (includes links to completed code and video of completing the tasks in Stata)
 - [Slack post with class recording link](https://smi-eco280-02-202101.slack.com/archives/C019JD2AK7H/p1602701266000800)
 
-### Week 8 (10/19 - 10/23)
+#### Week 8 (10/19 - 10/23)
 
-#### Mon 10/19
+##### Mon 10/19
 
 - Questions/discussion of finding papers to replicate
 - HW 5 work/help session
 
-#### Wed 10/21
+##### Wed 10/21
 
 **Submit** HW 5 by 10:45am EST
 - Why merging and reshaping?
 - Live coding: examples of reshaping and merging in R and Stata
 - Description of HW 6: merging and reshaping
 
-### Week 9 (10/26 - 10/30)
+#### Week 9 (10/26 - 10/30)
 
-#### Mon 10/26
+##### Mon 10/26
 
 **Submit** Paper choice w/ brief summary to group replication repo
 - Reinhardt and Rogoff example: why reproducibility matters
 - HW 6 work/help session
 
-#### Wed 10/28
+##### Wed 10/28
 
 **Submit** HW 6
 - Replication example/discussion
 - Live coding: examples of generating/using summary statistics and running/reporting regressions in R and Stata
 - Description of HW 7: Summary stats and regressions
 
-### Week 10 (11/2 - 11/6)
+#### Week 10 (11/2 - 11/6)
 
-#### Mon 11/2
+##### Mon 11/2
 
 - **Submit** data and import code to group replication repo
 - HW 7 work/help session
 
-#### Wed 11/4
+##### Wed 11/4
 
 - **Submit** HW 7
 - Discussion of project process, questions, and troubleshooting
 
-### Week 11 (11/9 - 11/13)
+#### Week 11 (11/9 - 11/13)
 
-#### Mon 11/9
+##### Mon 11/9
 
 Demonstration: programmatic data downloads
 
-#### Wed 11/11
+##### Wed 11/11
 
 Project work/help session
 
@@ -214,59 +214,59 @@ Project work/help session
 
 In this part of the course, we will focus on data exploration. The course will focus on data tasks you are familiar with from other courses but will emphasize using these summary measures to understand what's happening in your data. During this phase of the course, you will have several relatively short homework exercises, but will spend most of your time working on understanding a dataset of your own choosing. 
 
-### Week 12 (11/16 - 11/19)
+#### Week 12 (11/16 - 11/19)
 
-#### Mon 11/16
+##### Mon 11/16
 
 **Submit** [Paper replication](/materials/papers/replication)
 - Discussion of final project
 - Live coding examples: APIs
 - Description of HW 8: Data and APIs
 
-#### Wed 11/18
+##### Wed 11/18
 
 HW 8 work/help session
 
-### Week 13 (11/23 - 11/27)
+#### Week 13 (11/23 - 11/27)
 
-#### Mon 11/23
+##### Mon 11/23
 
 **Submit** HW 8
 
 - Live coding examples: graphs in R
 - Description of HW 9: Using ggplot
 
-#### Wed 11/24
+##### Wed 11/24
 
 *Thanksgiving Break*
     
-### Week 14 (11/30 - 12/4)
+#### Week 14 (11/30 - 12/4)
 
-#### Mon 11/30
+##### Mon 11/30
 
 **Submit** dataset for final project via final project repo (or other method arranged in advance for large datasets)
 HW 9 work/help session
 
-#### Wed 12/2
+##### Wed 12/2
 
 - Live coding examples: mapping in R using `sf` and `tmap`
 - Description of HW 10: Mapping in R
 
 **Submit HW9 by 5pm EST on Friday, Dec 4.**
 
-### Week 15 (12/7 - 12/11)
+#### Week 15 (12/7 - 12/11)
 
-#### Mon 12/7
+##### Mon 12/7
 HW 10 work/help session
 
-#### Wed 12/9
+##### Wed 12/9
 
 *Mountain Day Make-up*
 **Submit** HW 10
 Final project work/help session
 
-### Finals (12/14 - 12/17)
+#### Finals (12/14 - 12/17)
 
-#### Thurs 12/17
+##### Thurs 12/17
 
 **Submit** [Data analysis project](/materials/papers/analysis)
